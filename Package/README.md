@@ -8,32 +8,26 @@
 
 ## 1. 필수 package <a name="1.-NVIDIA-driver-설치"></a>
 
-  ### GPU info 확인
-  ```bash
-  $ sudo lshw -C display # 그래픽카드 정보 확인
-  $ ubuntu-drivers devices # 추천 드라이버 확인
   ```
-  ### Ubuntu 16.04 LTS 
-  나중에 깔게 되면 찾아서 넣음
-  
+  $ pip install python-dev-tools
+  $ sudo apt-get install build-essential cmake pkg-config
+  $ sudo apt-get install libx11-dev libatlas-base-dev
+  $ sudo apt-get install libgtk-3-dev libboost-python-dev
+  ```
   
 ---
 
 ## 1. 필수 package <a name="1.-NVIDIA-driver-설치"></a>
 
-  ### GPU info 확인
-  ```bash
-  $ sudo lshw -C display # 그래픽카드 정보 확인
-  $ ubuntu-drivers devices # 추천 드라이버 확인
-  ```
-  ### Ubuntu 16.04 LTS 
-  나중에 깔게 되면 찾아서 넣음
-  
+
+
 ---
 
 
 ## 3. dlib 설치 <a name="1.-dlib-설치"></a>
    
    ### ** Refernce
-   [Link01](https://www.learnopencv.com/install-dlib-on-ubuntu/)
+   [link01](https://www.learnopencv.com/install-dlib-on-ubuntu/)
+
+
 ---
