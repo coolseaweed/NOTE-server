@@ -75,7 +75,7 @@
   (y)es/(n)o/(q)uit: n
 
   ```
-  ### CUDA path 
+  ### CUDA path 추가
 
   ```
   export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}} 
