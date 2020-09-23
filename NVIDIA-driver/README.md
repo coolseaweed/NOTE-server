@@ -20,12 +20,16 @@
   ```
   $ sudo add-apt-repository ppa:graphics-drivers/ppa # repository 추가
   $ sudo apt update
-  $ apt-cache search nvidia | grep nvidia-driver-{version}
-  
+  $ apt-cache search nvidia | grep nvidia-driver-{recommand_version}
+  $ sudo apt-get install nvidia-driver-{recommand_version}
+  $ sudo shutdown -r now
   ```
 
-
-
+  ### Trouble shooting
+  기존에 설치된 프로그램과 충돌시 모두 삭제후 다시 
+  ```
+  $ sudo apt --purge autoremove nvidia*
+  ```
 ---
 
 ## 2. CUDA 설치
