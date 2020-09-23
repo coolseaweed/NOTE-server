@@ -110,8 +110,8 @@
   ```
 
    ### ** Trouble shooting
-   cuDNN Library for Linux의 파일을 window로 받을 경우 확장자명이 *.solitairetheme8 으로 변경 될 수 있다
-   *.solitairetheme8 --> *.tgz 로 확장자명을 변경 후 진행
+      cuDNN Library for Linux의 파일을 window로 받을 경우 확장자명이 *.solitairetheme8 으로 변경 될 수 있다
+      *.solitairetheme8 --> *.tgz 로 확장자명을 변경 후 진행
   
 
 
