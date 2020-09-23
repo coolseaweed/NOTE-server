@@ -103,7 +103,7 @@
       bond-slaves none
    ```
    ### bond interface 활성화
-   ```
+   ```bash
    $ sudo shutdown -r now # best option
    or
    $ sudo ifdown enp4s0 && ifdown enp5s0 && ifup bond0
