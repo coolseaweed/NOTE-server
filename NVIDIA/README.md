@@ -59,19 +59,19 @@
   <--- 옵션 설정 --->
   accept/decline/quit: accept
 
-  Install NVIDIA Accelerated Graphics Driver // 위에서 설치했으므로 n
+  Install NVIDIA Accelerated Graphics Driver # 위에서 설치했으므로 n
   (y)es/(n)o/(q)uit: n
 
   Install the CUDA 10.0 Toolkit? 
   (y)es/(n)o/(q)uit: y
 
-  Enter Toolkit Location  [ default is /usr/local/cuda-10.0 ]: // 엔터 치면 default로 자동설정 (recommand)
+  Enter Toolkit Location  [ default is /usr/local/cuda-10.0 ]: # 엔터 치면 default로 자동설정 (recommand)
 
   Do you want to install a symbolic link at /usr/local/cuda?
 
   (y)es/(n)o/(q)uit: y
 
-  Install the CUDA 10.0 Samples? // sample code 필요하면 y
+  Install the CUDA 10.0 Samples? # sample code 필요하면 y
 
   (y)es/(n)o/(q)uit: n
 
