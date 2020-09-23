@@ -1,13 +1,13 @@
 
 # NVIDIA driver + CUDA + cudnn 설치 가이드
-   [1. nvidia driver 설치](#1.-nvidia-driver-설치)
+   [1. NVIDIA driver 설치](#1.-NVIDIA-driver-설치)
 
    [2. CUDA 설치](#2.-CUDA-설치)
 
    [3. cuDNN 설치](#3.-cuDNN-설치)
 
 
-## 1. nvidia driver 설치 <a name="1.-nvidia-driver-설치"></a>
+## 1. NVIDIA driver 설치 <a name="1.-NVIDIA-driver-설치"></a>
 
   ### GPU info 확인
   ```
