@@ -10,7 +10,7 @@
 ## 1. NVIDIA driver 설치 <a name="1.-NVIDIA-driver-설치"></a>
 
   ### GPU info 확인
-  ```python
+  ```bash
   $ sudo lshw -C display # 그래픽카드 정보 확인
   $ ubuntu-drivers devices # 추천 드라이버 확인
   ```
@@ -21,7 +21,7 @@
   
 
   ### Ubuntu 18.04 LTS 
-  ```Bash
+  ```bash
   $ sudo add-apt-repository ppa:graphics-drivers/ppa # repository 추가
   $ sudo apt update
   $ apt-cache search nvidia | grep nvidia-driver-{recommand_version}
@@ -32,7 +32,7 @@
 
   ### ** Trouble shooting
   기존에 설치된 프로그램과 충돌시 모두 삭제후 다시 설치
-  ```
+  ```bash
   $ sudo apt --purge autoremove nvidia*
   ```
   
@@ -53,7 +53,7 @@
 
 <!--<img src="/img/cuda_install.JPG"  width="700" height="370">-->
   ### CUDA 설치
-  ```
+  ```bash
   $ sudo sh cuda_10.0.130_410.48_linux.run
   
   <--- 옵션 설정 --->
@@ -86,7 +86,7 @@
   
   ### ** Trouble shooting
   기존에 설치된 cuda 폴더 삭제 후 다시 시도
-  ```
+  ```bash
   $ sudo rm -rf /usr/local/cuda-10.0
   $ sudo rm -rf /usr/local/cuda
   ```
@@ -100,7 +100,7 @@
   [ ! ] tensorflow의 경우 버전마다 cuDNN 버전이 다르니 확인!
 
   ### cuDNN 설치
-  ```
+  ```bash
   $ sudo tar -xzvf cudnn-10.0-linux-x64-v7.6.5.32.tgz
   $ cd cuda
   $ sudo cp include/cudnn.h /usr/local/cuda/include
