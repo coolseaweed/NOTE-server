@@ -53,7 +53,7 @@
 <!--<img src="/img/cuda_install.JPG"  width="700" height="370">-->
   ### CUDA 설치
   ```
-  sudo sh cuda_10.0.130_410.48_linux.run
+  $ sudo sh cuda_10.0.130_410.48_linux.run
   
   <--- 옵션 설정 --->
   accept/decline/quit: accept
@@ -86,8 +86,8 @@
   ### **Trouble shooting
   기존에 설치된 cuda 폴더 삭제 후 다시 시도
   ```
-  sudo rm -rf /usr/local/cuda-10.0
-  sudo rm -rf /usr/local/cuda
+  $ sudo rm -rf /usr/local/cuda-10.0
+  $ sudo rm -rf /usr/local/cuda
   ```
 
 ---
