@@ -7,8 +7,6 @@
    
 ## 1. Git 설치 <a name="1.-Git-설치"></a>
 
-  ### GPU info 확인
-
 ---
 
 ## 2. Commands <a name="2.-Commands"></a>
