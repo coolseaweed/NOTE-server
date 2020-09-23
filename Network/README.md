@@ -104,7 +104,7 @@
    ```
    ### bond interface 활성화
    ```
-   $ sudo shutdown -r now (best)
+   $ sudo shutdown -r now # best option
    or
    $ sudo systemctl restart networking.service
    $ sudo service networking restart
