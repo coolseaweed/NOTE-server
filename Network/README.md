@@ -37,6 +37,7 @@
    $ mkdir ~/.ssh
    $ vi ~/.ssh/authorized_keys # client에서 복사한 id_rsa.pub 내용 붙여넣기
    ```
+---
 
 ## 2. SCP <a name="2.-SCP"></a>
 
@@ -48,7 +49,10 @@
    $ scp -P 5000 coolseaweed@192.168.100.1:~/temp.wav /dev/stdout | play /dev/stdin 
    ```
 
-  
+---
+## 3. Bonding <a name="3.-Bonding"></a>
+
+
   
   
   
