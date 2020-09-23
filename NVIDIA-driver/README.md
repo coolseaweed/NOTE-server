@@ -71,14 +71,12 @@
   (y)es/(n)o/(q)uit: n
 
   ```
-  ### CUDA path 설정
+  ### CUDA path 
 
   ```
-  $ vi ~/.bashrc
   export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}} 
   export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-  $ source ~/.bashrc 
-  $ nvcc --version
+  $ nvcc --version # 설치 확인
   ```
   
   ### **Trouble shooting
