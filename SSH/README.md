@@ -17,7 +17,7 @@
   ### Server
   ```
   $ mkdir ~/.ssh
-  $ vi ~/.ssh/authorized_keys # client에서 복사한 id_rsa.pub 내용 
+  $ vi ~/.ssh/authorized_keys # client에서 복사한 id_rsa.pub 내용 붙여넣기
   ```
 
   
