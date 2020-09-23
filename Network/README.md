@@ -81,22 +81,22 @@
    #iface lo inet loopback
 
    # The primary network interface
-   auto enp5s0
+   auto enp4s0 # LAN card 1
    iface enp5s0 inet manual
       bond-master bond0
 
-   auto enp6s0
+   auto enp6s0 # LAN card 2
    iface enp6s0 inet manual
       bond-master bond0
 
    auto bond0
    iface bond0 inet static
-      address 192.168.100.13
-      gateway 192.168.100.1
+      address 192.168.1.150 # machine ip address
+      gateway 192.168.1.1
       netmask 255.255.255.0
-      network 192.168.100.0
-      broadcast 192.168.100.255
-      dns-servers 8.8.8.8
+      network 192.168.1.0
+      broadcast 192.168.1.255
+      dns-nameservers 8.8.8.8
 
       bond-mode 0
       bond-miimon 100
