@@ -95,7 +95,7 @@
 
 ## 3. cuDNN 설치 <a name="3.-cuDNN-설치"></a>
   ### CUDA 버전에 맞는 cuDNN 라이브러리 다운로드
-  <span style="color:red">tensorflow의 경우 버전마다 cuDNN 버전이 다르니 확인!</span>
+  <span style="color:red">tensorflow의 경우 <em>버전</em>마다 cuDNN 버전이 다르니 확인!</span>
   a
   [cuDNN archive](https://developer.nvidia.com/rdp/cudnn-archive)
   
