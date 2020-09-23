@@ -13,7 +13,10 @@
   
 
   ### Ubuntu 18.04 LTS 
-  https://codechacha.com/ko/install-nvidia-driver-ubuntu/
+  ```
+  sudo lshw -C display
+  
+  ```
 
 
 
