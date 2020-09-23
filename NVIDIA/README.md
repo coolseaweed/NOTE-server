@@ -10,7 +10,7 @@
 ## 1. NVIDIA driver 설치 <a name="1.-NVIDIA-driver-설치"></a>
 
   ### GPU info 확인
-  ```
+  ```python
   $ sudo lshw -C display # 그래픽카드 정보 확인
   $ ubuntu-drivers devices # 추천 드라이버 확인
   ```
