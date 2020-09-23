@@ -1,8 +1,10 @@
 # Network 커맨드 정리 노트
 
    [1. SSH](#1.-SSH)
+   
+   [2. SCP](#2.-SCP)
 
-   [2. Bonding](#2.-Bonding)
+   [3. Bonding](#3.-Bonding)
 
 
 
@@ -36,6 +38,17 @@
    $ vi ~/.ssh/authorized_keys # client에서 복사한 id_rsa.pub 내용 붙여넣기
    ```
 
+## 2. SCP <a name="2.-SCP"></a>
+
+   ### 기본
+   ```bash
+   $ scp -P [port_num] [username]@[host_address]:<src_path> <dest_path>
+   
+   # 사용예제 (server wavfile local에서 재생)
+   $ scp -P 5000 coolseaweed@192.168.100.1:~/temp.wav /dev/stdout | play /dev/stdin 
+   ```
+
+  
   
   
   
