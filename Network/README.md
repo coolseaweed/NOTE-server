@@ -52,14 +52,54 @@
 ---
 ## 3. Bonding <a name="3.-Bonding"></a>
    
-   ### Bonding driver check
+   ### Bonding driver/interface check
    ```bash
    $ sudo modprobe bonding
    $ lsmod | grep bond
    bonding        163840   0
+   $ ifconfig -a
+   ```
+   
+   ### ifenslave package 설치
+   ```bash
+   $ sudo apt-get install ifenslave
    ```
 
-  
+   ### network interface config 수정
+   ```bash
+   $ sudo nano /etc/network/interfaces
+   # This file describes the network interfaces available on your system
+   # and how to activate them. For more information, see interfaces(5).
+
+   source /etc/network/interfaces.d/*
+
+   # The loopback network interface
+   #auto lo
+   #iface lo inet loopback
+
+   # The primary network interface
+   auto enp5s0
+   iface enp5s0 inet manual
+      bond-master bond0
+
+   auto enp6s0
+   iface enp6s0 inet manual
+      bond-master bond0
+
+   auto bond0
+   iface bond0 inet static
+      address 192.168.100.13
+      gateway 192.168.100.1
+      netmask 255.255.255.0
+      network 192.168.100.0
+      broadcast 192.168.100.255
+      dns-servers 8.8.8.8
+
+      bond-mode 0
+      bond-miimon 100
+      bond-slaves none
+   ```
+
   
   
   
