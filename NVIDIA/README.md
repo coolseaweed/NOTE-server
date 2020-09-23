@@ -96,7 +96,9 @@
 ## 3. cuDNN 설치 <a name="3.-cuDNN-설치"></a>
   ### CUDA 버전에 맞는 cuDNN 라이브러리 다운로드
   [cuDNN archive](https://developer.nvidia.com/rdp/cudnn-archive)
-  
+
+  [ ! ] tensorflow의 경우 버전마다 cuDNN 버전이 다르니 확인!
+
   ### cuDNN 설치
   ```
   $ sudo tar -xzvf cudnn-10.0-linux-x64-v7.6.5.32.tgz
@@ -106,9 +108,6 @@
   $ sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
   $ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2 # cuDNN 버전 확인
   ```
-
-
-  [ ! ] tensorflow의 경우 버전마다 cuDNN 버전이 다르니 확인!
 
    ### ** Trouble shooting
    cuDNN Library for Linux의 파일을 window로 받을 경우 확장자명이 *.solitairetheme8 으로 변경 될 수 있다
