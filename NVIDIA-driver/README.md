@@ -35,7 +35,7 @@
 
 ## 2. CUDA 설치
   Release
-  * CUDA Toolkit 10.2 (Nov 2019), Versioned Online Documentation
+  * [CUDA Toolkit 10.2](https://developer.nvidia.com/cuda-downloads) (Nov 2019), Versioned Online Documentation
   * CUDA Toolkit 10.1 update2 (Aug 2019), Versioned Online Documentation
   * CUDA Toolkit 10.1 update1 (May 2019), Versioned Online Documentation
   * CUDA Toolkit 10.1 (Feb 2019), Online Documentation
