@@ -51,26 +51,24 @@
   ```
   sudo sh cuda_10.0.130_410.48_linux.run
   
-  ### 옵션 설정 ###
+  <--- 옵션 설정 --->
   accept/decline/quit: accept
 
-  Install NVIDIA Accelerated Graphics Driver ~~~ 그래픽 드라이버 설치했으면 n, 해야한다면 y
+  Install NVIDIA Accelerated Graphics Driver // 위에서 설치했으므로 n
   (y)es/(n)o/(q)uit: n
 
   Install the CUDA 8.0 Toolkit? CUDA 설치해야하므로 y
   (y)es/(n)o/(q)uit: y
 
-  Enter Toolkit Location  [ default is /usr/local/cuda-8.0 ]:엔터 치면 default로 자동설정
+  Enter Toolkit Location  [ default is /usr/local/cuda-8.0 ]: // 엔터 치면 default로 자동설정
 
   Do you want to install a symbolic link at /usr/local/cuda?
 
   (y)es/(n)o/(q)uit: y
 
-  Install the CUDA 8.0 Samples?
+  Install the CUDA 10.0 Samples?
 
-  (y)es/(n)o/(q)uit: y
-
-  Enter CUDA Samples Location  [ default is /home/사용자 이름 ]:엔터 치면 default 자
+  (y)es/(n)o/(q)uit: n
 
   ```
 
