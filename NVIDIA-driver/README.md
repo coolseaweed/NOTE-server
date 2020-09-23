@@ -23,6 +23,7 @@
   $ apt-cache search nvidia | grep nvidia-driver-{recommand_version}
   $ sudo apt-get install nvidia-driver-{recommand_version}
   $ sudo shutdown -r now
+  $ nvidia-smi # 설치확인
   ```
 
   ### **Trouble shooting
