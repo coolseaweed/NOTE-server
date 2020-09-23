@@ -25,8 +25,8 @@
   $ sudo shutdown -r now
   ```
 
-  ### Trouble shooting
-  기존에 설치된 프로그램과 충돌시 모두 삭제후 다시 
+  ### **Trouble shooting
+  기존에 설치된 프로그램과 충돌시 모두 삭제후 다시 설치
   ```
   $ sudo apt --purge autoremove nvidia*
   ```
