@@ -112,4 +112,6 @@
    $ sudo service networking restart
   ```
   
-  
+   ### ** Reference
+   [link](https://www.tecmint.com/configure-network-bonding-teaming-in-ubuntu/)
+
