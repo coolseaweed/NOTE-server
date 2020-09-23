@@ -10,6 +10,9 @@
    ### 서버 접속
    ```bash
    $ ssh -p [port_num] [username]@[host_address]
+   
+   # 사용예제
+   $ ssh -p 5000 coolseaweed@192.168.100.1
    ```
 
    ### Tunneling
