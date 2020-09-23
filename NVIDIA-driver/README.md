@@ -36,6 +36,7 @@
 ## 2. CUDA 설치
   ### CUDA runfile 다운로드
   <img src="/img/cuda_install01.JPG">
+  
   * [CUDA Toolkit 10.2](https://developer.nvidia.com/cuda-downloads) (Nov 2019), [Install Guide](https://docs.nvidia.com/cuda/archive/10.2/)
   * [CUDA Toolkit 10.1 update2](https://developer.nvidia.com/cuda-10.1-download-archive-update2) (Aug 2019), [Install Guide](https://docs.nvidia.com/cuda/archive/10.1/)
   * [CUDA Toolkit 10.1 update1](https://developer.nvidia.com/cuda-10.1-download-archive-update1) (May 2019), [Install Guide](https://docs.nvidia.com/cuda/archive/10.1/)
