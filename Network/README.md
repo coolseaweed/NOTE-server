@@ -2,20 +2,24 @@
 
    [1. SSH](#1.-SSH)
 
-   [1. SSH authorization](#1.-SSH-authorization)
+   [2. Bonding](#2.-Bonding)
 
-   [2. CUDA 설치](#2.-CUDA-설치)
-
-   [3. cuDNN 설치](#3.-cuDNN-설치)
 
 
 ## 1. SSH <a name="1.-SSH"></a>
    ### 서버 접속
    ```bash
-   $ ssh -
+   $ ssh -p [port_num] [username]@[host_address]
    ```
 
-   ### authorization
+   ### Tunneling
+   ```bash
+   $ ssh -L [local_port]:localhost:[server_port] [username]@[host_address] -p [portnum]
+   
+   # 사용예제
+   $ ssh -L 1234:localhost:7777 coolseaweed@xxx.xxx.xxx.xxx -p 22
+   ```
+   ### Authorization
    >비밀번호 입력 없이 서버 접속 허가
 
    * Client
