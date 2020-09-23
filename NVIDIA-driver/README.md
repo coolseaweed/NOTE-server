@@ -35,14 +35,14 @@
 
 ## 2. CUDA 설치
   Release
-  * [CUDA Toolkit 10.2](https://developer.nvidia.com/cuda-downloads) (Nov 2019), Versioned Online Documentation
-  * CUDA Toolkit 10.1 update2 (Aug 2019), Versioned Online Documentation
-  * CUDA Toolkit 10.1 update1 (May 2019), Versioned Online Documentation
-  * CUDA Toolkit 10.1 (Feb 2019), Online Documentation
-  * CUDA Toolkit 10.0 (Sept 2018), Online Documentation
-  * CUDA Toolkit 9.2 (May 2018),Online Documentation
-  * CUDA Toolkit 9.1 (Dec 2017), Online Documentation
-  * CUDA Toolkit 9.0 (Sept 2017), Online Documentation
+  * [CUDA Toolkit 10.2](https://developer.nvidia.com/cuda-downloads) (Nov 2019), [Install Guide](https://docs.nvidia.com/cuda/archive/10.2/)
+  * [CUDA Toolkit 10.1 update2](https://developer.nvidia.com/cuda-10.1-download-archive-update2) (Aug 2019), [Install Guide](https://docs.nvidia.com/cuda/archive/10.1/)
+  * [CUDA Toolkit 10.1 update1](https://developer.nvidia.com/cuda-10.1-download-archive-update1) (May 2019), [Install Guide](https://docs.nvidia.com/cuda/archive/10.1/)
+  * [CUDA Toolkit 10.1](https://developer.nvidia.com/cuda-10.1-download-archive-base) (Feb 2019), [Install Guide](https://docs.nvidia.com/cuda/archive/10.1/)
+  * [CUDA Toolkit 10.0](https://developer.nvidia.com/cuda-10.0-download-archive) (Sept 2018), [Install Guide](https://docs.nvidia.com/cuda/archive/10.0/)
+  * [CUDA Toolkit 9.2](https://developer.nvidia.com/cuda-92-download-archive) (May 2018), [Install Guide](https://docs.nvidia.com/cuda/archive/9.2/)
+  * [CUDA Toolkit 9.1](https://developer.nvidia.com/cuda-91-download-archive-new) (Dec 2017), [Install Guide](https://docs.nvidia.com/cuda/archive/9.1/)
+  * [CUDA Toolkit 9.0](https://developer.nvidia.com/cuda-90-download-archive) (Sept 2017), [Install Guide](https://docs.nvidia.com/cuda/archive/9.0/)
 
 
 ---
