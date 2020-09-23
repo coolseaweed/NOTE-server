@@ -19,3 +19,13 @@
   c.NotebookApp.ip = '0.0.0.0'
   ```
   
+  * 가상환경 추가 접속
+  ```
+  $ conda activate [virtualenv]
+  $ pip install ipykernel
+  $ python -m ipykernel install --user --name [virtualenv] --display-name "[env_name]"
+  ```
+  
+  * ctrl + a + d (background로 전환)
+  ### etc
+  * vscode terminal 옮길때 --> "workbench.panel.defaultLocation": "bottom
