@@ -106,10 +106,10 @@
    ```
    $ sudo shutdown -r now # best option
    or
+   $ sudo ifdown enp4s0 && ifdown enp5s0 && ifup bond0
+   or
    $ sudo systemctl restart networking.service
    $ sudo service networking restart
-   or
-   $ sudo ifdown enp4s0 && ifdown enp5s0 && ifup bond0
   ```
   
   
