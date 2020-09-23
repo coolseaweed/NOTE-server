@@ -16,7 +16,7 @@
    ```bash
    $ ssh -L [local_port]:localhost:[server_port] [username]@[host_address] -p [portnum]
    
-   # 사용예제 (local machine의 1234 포트와 server의 7777 포트 연결/ 5000번은 forwarding 된 포트 )
+   # 사용예제 (local machine의 1234 port와 server의 7777 port 연결/ 5000번은 port forwarding )
    $ ssh -L 1234:localhost:7777 coolseaweed@192.168.100.1 -p 5000
    ```
    ### Authorization
