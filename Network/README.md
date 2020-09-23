@@ -102,7 +102,14 @@
       bond-miimon 100
       bond-slaves none
    ```
-
-  
+   ### bond interface 활성화
+   ```
+   $ sudo shutdown -r now (best)
+   or
+   $ sudo systemctl restart networking.service
+   $ sudo service networking restart
+   or
+   $ sudo ifdown enp4s0 && ifdown enp5s0 && ifup bond0
+  ```
   
   
