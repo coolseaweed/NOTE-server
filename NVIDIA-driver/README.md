@@ -7,7 +7,7 @@
  [3. cuDNN 설치](#3.-cuDNN-설치)
 
 
-## 1. nvidia driver 설치 
+## 1. nvidia driver 설치 <a name="1.-nvidia-driver-설치"></a>
 
   ### GPU info 확인
   ```
@@ -37,7 +37,7 @@
   ```
 ---
 
-## 2. CUDA 설치
+## 2. CUDA 설치 <a name="2.-CUDA-설치"></a>
   ### CUDA runfile 다운로드
   <img src="/img/cuda_install.JPG">
   
