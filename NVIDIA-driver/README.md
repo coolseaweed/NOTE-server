@@ -5,6 +5,13 @@
 
 ## 1. nvidia driver 설치 
 
+
+  ### Ubuntu 16.04 LTS 
+  나중에 깔게 되면 찾아서 넣음
+  
+  
+  
+
   ### Ubuntu 18.04 LTS 
   https://codechacha.com/ko/install-nvidia-driver-ubuntu/
 
