@@ -34,7 +34,14 @@
 ---
 
 ## 2. CUDA 설치
-
+  * CUDA Toolkit 10.2 (Nov 2019), Versioned Online Documentation
+  * CUDA Toolkit 10.1 update2 (Aug 2019), Versioned Online Documentation
+  * CUDA Toolkit 10.1 update1 (May 2019), Versioned Online Documentation
+  * CUDA Toolkit 10.1 (Feb 2019), Online Documentation
+  * CUDA Toolkit 10.0 (Sept 2018), Online Documentation
+  * CUDA Toolkit 9.2 (May 2018),Online Documentation
+  * CUDA Toolkit 9.1 (Dec 2017), Online Documentation
+  * CUDA Toolkit 9.0 (Sept 2017), Online Documentation
 
 
 ---
