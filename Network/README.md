@@ -60,7 +60,7 @@
    $ ifconfig -a
    ```
    
-   ### ifenslave package 설치 (Debian/Ubuntu 버전이 오래됬을 )
+   ### ifenslave package 설치 (옛날 버전 Debian/Ubuntu 일때 )
    ```bash
    $ sudo apt-get install ifenslave
    ```
