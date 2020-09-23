@@ -44,6 +44,7 @@
   * [CUDA Toolkit 9.1](https://developer.nvidia.com/cuda-91-download-archive-new) (Dec 2017), [Install Guide](https://docs.nvidia.com/cuda/archive/9.1/)
   * [CUDA Toolkit 9.0](https://developer.nvidia.com/cuda-90-download-archive) (Sept 2017), [Install Guide](https://docs.nvidia.com/cuda/archive/9.0/)
   
-<img src="/img/cuda_install.JPG"  width="700" height="370">
+//<img src="/img/cuda_install.JPG"  width="700" height="370">
+<img src="/img/cuda_install.JPG">
 
 ---
