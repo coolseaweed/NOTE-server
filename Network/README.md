@@ -54,10 +54,13 @@
    
    ### Bonding driver/interface check
    ```bash
+   # bonding kernel 확인
    $ sudo modprobe bonding
    $ lsmod | grep bond
    bonding        163840   0
-   $ ifconfig -a
+   
+   # LAN card 확인 (ex. enp4s0, enp6s0)
+   $ ifconfig -a 
    ```
    
    ### ifenslave package 설치 (옛날 버전 Debian/Ubuntu 일때 )
