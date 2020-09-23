@@ -51,7 +51,7 @@
 
 ---
 ## 3. Bonding <a name="3.-Bonding"></a>
-   
+   > 네트워크 interface의 bandwidth를 늘리기 
    ### Bonding driver/interface check
    ```bash
    # bonding kernel 확인
