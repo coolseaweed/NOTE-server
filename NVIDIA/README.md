@@ -30,7 +30,7 @@
   $ nvidia-smi # 설치확인
   ```
 
-  ### **Trouble shooting
+  ### ** Trouble shooting
   기존에 설치된 프로그램과 충돌시 모두 삭제후 다시 설치
   ```
   $ sudo apt --purge autoremove nvidia*
@@ -99,7 +99,9 @@
 
   [ ! ] tensorflow의 경우 버전마다 cuDNN 버전이 다르니 확인!
 
-
+   ### ** Trouble shooting
+   cuDNN Library for Linux의 파일을 window로 받을 경우 확장자명이 *.solitairetheme8 으로 변경 될 수 있다
+   *.solitairetheme8 --> *.tgz 로 확장자명을 변경 후 진행
   
 
 
