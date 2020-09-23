@@ -21,7 +21,7 @@
   
 
   ### Ubuntu 18.04 LTS 
-  ```
+  ```shell
   $ sudo add-apt-repository ppa:graphics-drivers/ppa # repository 추가
   $ sudo apt update
   $ apt-cache search nvidia | grep nvidia-driver-{recommand_version}
