@@ -56,7 +56,7 @@
   ```bash
   $ sudo sh cuda_10.0.130_410.48_linux.run
   
-  <--- 옵션 설정 --->
+  <<<  옵션 설정  >>>
   accept/decline/quit: accept
 
   Install NVIDIA Accelerated Graphics Driver # 위에서 설치했으므로 n
