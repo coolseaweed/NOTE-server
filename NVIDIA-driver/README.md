@@ -71,8 +71,19 @@
   (y)es/(n)o/(q)uit: n
 
   ```
-
-
-
+  ### CUDA path 설정 (~/.bashrc)
+  export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}} 
+  export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+  ```
+  $ source ~/.bashrc 
+  $ nvcc --version
+  ```
+  
+  ### **Trouble shooting
+  기존에 설치된 cuda 폴더 삭제 후 다시 시도
+  ```
+  sudo rm -rf /usr/local/cuda-10.0
+  sudo rm -rf /usr/local/cuda
+  ```
 
 ---
