@@ -17,7 +17,7 @@
   
 ---
 
-## 1. 필수 package <a name="1.-NVIDIA-driver-설치"></a>
+## 2. opencv 설치 <a name="1.-opencv-설치"></a>
 
 
 
