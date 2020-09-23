@@ -9,14 +9,15 @@
 ## 1. Authorization <a name="1.-Authorization"></a>
   비밀번호 입력 없이 서버 접속 허가
   
-  # Client
+  ### Client
   ```
   $ ssh-keygen # Enter 연타
-  $ cat ~/.ssh/id_rsa.pub 
+  $ cat ~/.ssh/id_rsa.pub # 내용 복사
   ```
-  # Server
+  ### Server
   ```
-  $
+  $ mkdir ~/.ssh
+  $ vi ~/.ssh/authorized_keys # client에서 복사한 id_rsa.pub 내용 
   ```
 
   
