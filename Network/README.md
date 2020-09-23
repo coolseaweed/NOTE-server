@@ -1,12 +1,12 @@
-# SSH 커맨드 정리 노트
-   [1. Authorization](#1.-Authorization)
+# Network 커맨드 정리 노트
+   [1. SSH authorization](#1.-SSH-authorization)
 
    [2. CUDA 설치](#2.-CUDA-설치)
 
    [3. cuDNN 설치](#3.-cuDNN-설치)
 
 
-## 1. Authorization <a name="1.-Authorization"></a>
+## 1. SSH authorization <a name="1.-SSH-authorization"></a>
 >비밀번호 입력 없이 서버 접속 허가
   
   ### Client
