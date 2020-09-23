@@ -7,7 +7,7 @@
 
 
 ## 1. Authorization <a name="1.-Authorization"></a>
->  비밀번호 입력 없이 서버 접속 허가
+>비밀번호 입력 없이 서버 접속 허가
   
   ### Client
   ```
