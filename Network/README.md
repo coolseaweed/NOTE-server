@@ -52,7 +52,7 @@
 ---
 ## 3. Bonding <a name="3.-Bonding"></a>
    > 네트워크 interface의 bandwidth를 늘리기 
-   ### Bonding driver/interface check
+   ### Bonding driver/interface 확인
    ```bash
    # bonding kernel 확인
    $ sudo modprobe bonding
@@ -61,14 +61,12 @@
    
    # LAN card 확인 (ex. enp4s0, enp6s0)
    $ ifconfig -a 
-   ```
    
-   ### ifenslave package 설치 (옛날 버전 Debian/Ubuntu 일때 )
-   ```bash
+   # 옛날 버전 Debian/Ubuntu 일때
    $ sudo apt-get install ifenslave
    ```
-
-   ### network interface config 수정
+   
+   ### network interface 수정 
    ```bash
    $ sudo nano /etc/network/interfaces
    # This file describes the network interfaces available on your system
