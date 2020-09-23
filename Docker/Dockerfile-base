@@ -1,0 +1,133 @@
+# from
+#FROM nvidia/cuda:10.1-cudnn7-runtime-ubuntu18.04
+FROM nvidia/cuda:10.0-cudnn7-runtime-ubuntu18.04
+LABEL maintainer="tom@atlaslabs.ai"
+
+# Updating Ubuntu packages
+RUN apt-get update 
+RUN apt-get -y upgrade
+RUN apt-get install -y --no-install-recommends g++ git curl emacs
+
+# Adding wget and bzip2
+RUN apt-get install -y wget bzip2
+
+# Add sudo
+RUN apt-get -y install sudo
+
+# python stuff
+RUN apt-get install -y python3-pip python3-dev
+RUN cd /usr/local/bin && \
+   ln -s /usr/bin/python3 python && \
+       ln -s /usr/bin/pip3 pip && \
+           pip3 install --upgrade pip
+
+
+# ENV variables
+ENV LANG=C.UTF-8
+
+# workspace
+RUN mkdir -p /workspace
+WORKDIR /workspace
+
+ENTRYPOINT ["/bin/bash"]
+
+
+##################### < OPTIONAL:Anaconda > #############################
+
+# # Anaconda installing
+# RUN wget https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
+# RUN bash Anaconda3-5.0.1-Linux-x86_64.sh -b
+# RUN rm Anaconda3-5.0.1-Linux-x86_64.sh
+
+# # Set path to conda
+# ENV PATH /root/anaconda3/bin:$PATH
+
+# # Updating Anaconda packages
+# RUN conda update conda
+# RUN conda update anaconda
+# RUN conda update --all
+
+
+
+
+# Configuring access to Jupyter
+# RUN mkdir /root/notebooks
+# RUN jupyter notebook --ip=0.0.0.0 --port=8888--generate-config --allow-root
+# RUN echo "c.NotebookApp.password = u'sha1:6a3f528eec40:6e896b6e4828f525a6e20e5411cd1c8075d68619'" >> /root/.jupyter/jupyter_notebook_config.py
+
+# Jupyter listens port: 8888
+# EXPOSE 8888
+
+# Run Jupytewr notebook as Docker main process
+#CMD ["jupyter", "notebook", "--allow-root", "--notebook-dir=/root/notebooks", "--ip='*'", "--port=8888", "--no-browser"]
+
+
+
+
+
+#################################################################################
+# Konlpy+Mecab, from https://hub.docker.com/r/theeluwin/ubuntu-konlpy/dockerfile
+# LABEL maintainer="Jamie Seol <theeluwin@gmail.com>"
+# apt init
+# ENV LANG=C.UTF-8
+# ENV TZ=Asia/Seoul
+# ENV DEBIAN_FRONTEND=noninteractive
+
+# RUN apt-get update && \
+#     apt-get install -y --no-install-recommends tzdata g++ git curl
+
+# java stuff
+#RUN apt-get install -y default-jdk default-jre
+
+# for python soundfile
+#RUN apt-get install -y libsndfile-dev
+#
+## python stuff
+#RUN apt-get install -y python3-pip python3-dev
+#RUN cd /usr/local/bin && \
+#    ln -s /usr/bin/python3 python && \
+#        ln -s /usr/bin/pip3 pip && \
+#            pip3 install --upgrade pip
+#
+## apt cleanse
+#RUN apt-get clean && \
+#    rm -rf /var/lib/apt/lists/*
+#
+## timezone
+#RUN ln -sf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+#
+## workspace
+#RUN mkdir -p /workspace
+#WORKDIR /workspace
+#
+## atlas-nlp base packages
+#RUN pip install h5py jamotools librosa numpy pandas pyyaml scikit-learn scipy soundfile unidecode
+#
+## (konlpy) install python packages
+##RUN pip install jpype1-py3 konlpy
+##RUN cd /workspace && \
+#    curl -s https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh | bash -s
+#
+##################################################################################
+#
+## FROM floydhub/dl-base:latest-py3
+## MAINTAINER Floyd Labs "support@floydhub.com"
+#
+## tensorflow gpu and keras
+##RUN pip --no-cache-dir install --upgrade tensorflow-gpu==1.13.1 keras==2.2.4
+#
+## keras-contrib
+##RUN pip --no-cache-dir install git+https://github.com/keras-team/keras-contrib.git
+#
+## pytorch 1.2 with CUDA 10.0 -- drop URL according to stackoverflow for CUDA 10.0
+##RUN pip --no-cache-dir install torch==1.2.0 torchvision==0.4.0
+#
+##################################################################################
+#
+## install kafka-messenger
+##COPY ./src/kafka_messenger /workspace/kafka_messenger
+#
+##RUN pip --no-cache-dir install -e /workspace/kafka_messenger
+#
+## entry
+##ENTRYPOINT ["python"]
