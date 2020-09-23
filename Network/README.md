@@ -17,7 +17,7 @@
    $ ssh -L [local_port]:localhost:[server_port] [username]@[host_address] -p [portnum]
    
    # 사용예제
-   $ ssh -L 1234:localhost:7777 coolseaweed@xxx.xxx.xxx.xxx -p 22
+   $ ssh -L 1234:localhost:7777 coolseaweed@192.168.100.1 -p 5000
    ```
    ### Authorization
    >비밀번호 입력 없이 서버 접속 허가
