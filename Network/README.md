@@ -51,7 +51,13 @@
 
 ---
 ## 3. Bonding <a name="3.-Bonding"></a>
-
+   
+   ### Bonding driver check
+   ```bash
+   $ sudo modprobe bonding
+   $ lsmod | grep bond
+   bonding        163840   0
+   ```
 
   
   
