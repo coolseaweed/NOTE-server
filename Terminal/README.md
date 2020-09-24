@@ -9,10 +9,13 @@
 
 |명령어|기능|
 |:----|:----|
-|screen -S <이름>|<이름>으로 스크린 생성|
-|screen -ls|<이름>으로 스크린 생성|
-|screen -S <이름>|<이름>으로 스크린 생성|
-|screen -S <이름>|<이름>으로 스크린 생성|
+|screen -S <name>|<name>으로 screen 생성|
+|screen -ls|현재 생성된 screen list |
+|screen -r <name>|deatach 되어 있는 screen attach|
+|screen -X -S <name> kill|<name>screen 삭제|
+|screen -r d|sreen 강제로 detach|
+|Ctrl+a+d|screen deatch 단축키|
+
 
 
 
