@@ -7,7 +7,7 @@
 
 ## 1. Screen <a name="1.-Sreen"></a>
 
-|명령어|기능|
+|Commands|Function|
 |:----|:----|
 |screen -S <name>|<name>으로 screen 생성|
 |screen -ls|현재 생성된 screen list |
