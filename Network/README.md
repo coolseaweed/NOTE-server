@@ -1,12 +1,12 @@
 # Network 커맨드 정리 노트
 
-   [1. SSH](#1.-SSH)
+   [1. ssh](#1.-SSH)
    
-   [2. SCP](#2.-SCP)
+   [2. scp](#2.-SCP)
 
    [3. Bonding](#3.-Bonding)
 
-
+   [4. iperf](#4.-iperf)
 
 ## 1. SSH <a name="1.-SSH"></a>
    ### 서버 접속
@@ -115,4 +115,20 @@
   
    ### ** Reference
    [link](https://www.tecmint.com/configure-network-bonding-teaming-in-ubuntu/)
+
+
+## 4. iperf <a name="4.-iperf"></a>
+   ### Server
+   ```bash
+   $ iperf -s
+   ```
+
+   ### Client
+   ```bash
+   $ iperf -c <host ip> -P <parallel num>
+   ```
+
+---
+
+
 
