@@ -1,11 +1,12 @@
 # 자주쓰는 터미널 명령어 정리
 
 
-  [1. Screen](#1.-Screen)
+  [1. screen](#1.-screen)
+
+  [2. find](#2.-find)
 
 
-
-## 1. Screen <a name="1.-Sreen"></a>
+## 1. screen <a name="1.-screen"></a>
 
 |Commands|Function|
 |:----|:----|
@@ -17,8 +18,16 @@
 |Ctrl+a+d|screen deatch 단축키|
 
 
-
-
-
-
 ---
+
+## 2. find <a name="2.-find"></a>
+
+  ```
+  $ find . -name "*.lst"
+  ```
+
+
+
+
+
+
