@@ -33,6 +33,14 @@
 
   ```
   $ sudo dd if=/dev/zero of=/test/bb  bs=1M count=1024 oflag=direct
+  
+  # 사용예제 (local domain)
+  $ sudo dd if=/dev/zero of=/test/bb  bs=1M count=1024 oflag=direct
+  
+  # 사용예제 (gluster volume domain)
+  $ sudo dd if=/dev/zero of=/mnt/data/bb  bs=1M count=1024 oflag=direct
+
+  
   ```
   [ ! ] /test/bb 에 실제 용량이 써지므로 테스트 후 
 
