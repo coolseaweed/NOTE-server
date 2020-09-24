@@ -26,6 +26,16 @@
   $ find . -name "*.lst"
   ```
 
+---
+
+## 3. dd <a name="2.-dd"></a>
+> File read write 속도 측정에 사용되는 커맨드
+
+  ```
+  $ sudo dd if=/dev/zero of=/test/bb  bs=1M count=1024 oflag=direct
+  ```
+  [ ! ] /test/bb 에 실제 용량이 써지므로 테스트 후 
+
 
 
 
