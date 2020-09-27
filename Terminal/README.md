@@ -4,7 +4,10 @@
   [1. screen](#1.-screen)
 
   [2. find](#2.-find)
+  
+  [3. dd](#3.-dd)
 
+  [4. authority](#4.-authority)
 
 ## 1. screen <a name="1.-screen"></a>
 
@@ -32,7 +35,7 @@
 > File read write 속도 측정에 사용되는 커맨드
 
   ```
-  $ sudo dd if=/dev/zero of=/test/bb  bs=1M count=1024 oflag=direct
+  $ sudo dd if=/dev/zero of=[filename]  bs=1M count=1024 oflag=direct
   
   # 사용예제 (local domain)
   $ sudo dd if=/dev/zero of=/test/bb  bs=1M count=1024 oflag=direct
@@ -45,7 +48,13 @@
   [ ! ] /test/bb 에 실제 용량이 써지므로 테스트 후 
 
 
-
-
-
+## 4. authority <a name="4.-authority"></a>
+  ```
+  # owner change
+  $ chown <new-owner>  [filename]
+  
+  # owner change
+  $ chgrp <group> [filename]
+  
+  ```
 
