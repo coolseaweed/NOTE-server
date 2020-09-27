@@ -24,10 +24,8 @@
   $ docker save -o <tar_file> <image_name> # docker_image --> .tar
   $ docker load -i <tar_file> # docker_image.tar -> docker_image
   $ docker exec -it <container> bash #  실행중인 컨테이너 접속
-  $ docker build -i <imagenae:ver> . # dockefile build
+  $ docker build --tag <imagenae:ver> . # dockefile build
   ```
-
-
 ---
 
 
