@@ -14,15 +14,16 @@
 ---
 ## 2. Commands <a name="2.-Commands"></a>
 
-  ```
+  ```bash
   $ docker run -it -p [local_port]:[container_port] -v [local_dir]:[container_dir] --name [container_name] [docker_image] # 실행
   $ docker commit [container_name] [image_name] # 도커 이미지 
   $ docker images # 도커 이미지 리스트
   $ docker rmi # 도커 이미지삭제
   $ docker ps # 도커 컨테이너 리스트
   $ docker start [container] # 
-  $ docker save -o <tar_file> [image_name] # docker_image --> .tar
+  $ docker save -o <tar_file> <image_name> # docker_image --> .tar
   $ docker load -i <tar_file> # docker_image.tar -> docker_image
+  $ docker exec -it <container> bash #  실행중인 컨테이너 접속
   ```
 
 
