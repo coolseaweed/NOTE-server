@@ -16,6 +16,8 @@
 
   ```bash
   $ docker run -it -p [local_port]:[container_port] -v [local_dir]:[container_dir] --name [container_name] [docker_image] # 실행
+  # nvidia tookit 사용시 (docker ver <= 19.3) 
+  $ docker run --runtime=nvidia -it -p [local_port]:[container_port] -v [local_dir]:[container_dir] --name [container_name] [docker_image] # 실행
   $ docker commit [container_name] [image_name] # 도커 이미지 
   $ docker images # 도커 이미지 리스트
   $ docker rmi # 도커 이미지삭제
@@ -25,6 +27,9 @@
   $ docker load -i <tar_file> # docker_image.tar -> docker_image
   $ docker exec -it <container> bash #  실행중인 컨테이너 접속
   $ docker build --tag <imagenae:ver> . # dockefile build
+  
+  
+  $ docker run --runtime=nvidia -it -p 5900:5900 -v ~/workspace:/workspace --name edges2portrait tom_workspace:base
   ```
 ---
 
