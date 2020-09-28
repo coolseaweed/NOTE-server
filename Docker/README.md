@@ -8,7 +8,40 @@
   [9. References](#9.-References)
 
 ## 1. Docker 설치 <a name="1.-Docker-설치"></a>
+  ### Setup the repository
+  ```
+  $ sudo apt-get update
 
+  $ sudo apt-get install \
+      apt-transport-https \
+      ca-certificates \
+      curl \
+      gnupg-agent \
+      software-properties-common
+  $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  $ sudo apt-key fingerprint 0EBFCD88
+    pub   rsa4096 2017-02-22 [SCEA]
+          9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88
+    uid           [ unknown] Docker Release (CE deb) <docker@docker.com>
+    sub   rsa4096 2017-02-22 [S]
+    
+  $ sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+  ```
+  ### Install docker engine
+  ```
+  $ apt-cache madison docker-ce
+    docker-ce | 5:18.09.1~3-0~ubuntu-xenial | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages
+    docker-ce | 5:18.09.0~3-0~ubuntu-xenial | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages
+    docker-ce | 18.06.1~ce~3-0~ubuntu       | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages
+    docker-ce | 18.06.0~ce~3-0~ubuntu       | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages
+    ...
+  
+  $ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
+  $ sudo docker run hello-world
+  ```
 
 
 ---
