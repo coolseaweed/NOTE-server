@@ -1,9 +1,14 @@
 # Docker 정리 노트
-  [1. Docker 설치](#1.-Docker-설치)
-
-  [2. Commands](#2.-Commands)
   
-  [3. 단축키](#3.-단축키)
+  Ubuntu 18.04 LTS 
+
+  [1. Docker 설치](#1.-Docker-설치)
+  
+  [2. Nvidia-Docker 설치](#1.-Nvidia-Docker-설치)
+
+  [3. Commands](#2.-Commands)
+  
+  [4. 단축키](#3.-단축키)
 
   [9. References](#9.-References)
 
@@ -42,9 +47,27 @@
   $ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
   $ sudo docker run hello-world
   ```
+  ### add sudo group docker
+  ```
+  $ sudo groupadd docker
+  $ sudo usermod -aG docker ${USER}
+  $ logout
+  $ docker run hello-world
+  ```
+  
+  ### ** Reference
+  [Link01](https://docs.docker.com/engine/install/ubuntu/)
+  
+  
+  
+---
+
+## 2. Nvidia-Docker 설치 <a name="2.-Nvidia-Docker-설치"></a>
+  ### Setup the repository
 
 
 ---
+
 ## 2. Commands <a name="2.-Commands"></a>
 
   ```bash
