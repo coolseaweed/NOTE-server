@@ -4,7 +4,7 @@
 
   [1. Docker 설치](#1.-Docker-설치)
   
-  [2. Nvidia-Docker 설치](#1.-Nvidia-Docker-설치)
+  [2. nvidia-docker 설치](#1.-nvidia-docker-설치)
 
   [3. Commands](#2.-Commands)
   
@@ -55,6 +55,13 @@
   $ docker run hello-world
   ```
   
+  ### ** Trouble shooting
+  ```bash
+  $ sudo apt-get purge docker-ce docker-ce-cli containerd.io
+  $ sudo rm -rf /var/lib/docker
+  ```
+  
+  
   ### ** Reference
   [Link01](https://docs.docker.com/engine/install/ubuntu/)
   
@@ -62,9 +69,30 @@
   
 ---
 
-## 2. Nvidia-Docker 설치 <a name="2.-Nvidia-Docker-설치"></a>
-  ### Setup the repository
+## 2. nvidia-docker 설치 <a name="2.-nvidia-docker-설치"></a>
+  ### Remove nvidia-docker 1.0 dependency
+  ```
+  $ docker volume ls -q -f driver=nvidia-docker | xargs -r -I{} -n1 docker ps -q -a -f volume={} | xargs -r docker rm -f
 
+  $ sudo apt-get purge nvidia-docker
+  ```
+  
+  ### Installation
+  ```
+  $ curl https://get.docker.com | sh
+  $ sudo systemctl start docker && sudo systemctl enable docker
+  $ distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+  $ curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
+  $ curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+  $ sudo apt-get update
+
+  $ sudo apt-get install -y nvidia-docker2
+  $ sudo systemctl restart docker
+  $ sudo docker run --rm --gpus all nvidia/cuda:11.0-base nvidia-smi # test
+  ```
+  
+
+  
 
 ---
 
