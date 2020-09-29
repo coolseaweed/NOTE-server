@@ -27,10 +27,10 @@
 
    ### git repo 와 local dir 연동
    ```  
-
-
-   $ git remote rm origin
    $ git init
+   $ git remote add [git url]
+   $ git push -u origin master
+
 
 
    ```
