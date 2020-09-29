@@ -7,10 +7,11 @@
 
 ## 1. Github commands <a name="1.-Github-commands"></a>
    
-   ### 환경설정
+   ### Configuration
    ```bash
    $ git config --global user.name "coolseaweed"
    $ git config --global user.email "jeellato@gmail.com"
+   $ git config --list # can be changed at ~/.gitconfig
    ```
 
 
@@ -25,14 +26,18 @@
    $ git reset HEAD ^  
    ```
 
-   ### git repo 와 local dir 연동
+   ### Git repo <--> local dir 
    ```  
+   $ cd /to/your/project/dir/
    $ git init
    $ git remote add [git url]
    $ git push -u origin master
-
-
-
+   ```
+   
+   ### Ignore
+   ```bash
+   $ echo '<ignore_filenane>' >> .gitignore 
+   $ git add .gitignore
    ```
 
 
