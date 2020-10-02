@@ -39,20 +39,7 @@
    ```
 ---
 
-## 2. SCP <a name="2.-SCP"></a>
 
-   ### 기본
-   ```bash
-   $ scp -P [port_num] [username]@[host_address]:<src_path> <dest_path>
-   
-   # 사용예제 (server wavfile local에서 재생)
-   $ scp -P 5000 coolseaweed@192.168.100.1:~/temp.wav /dev/stdout | play /dev/stdin 
-   ```
-   ### rsync
-   ```
-   $ sudo rsync -av -e 'ssh -p [Port num]' --delete [source_dir] [user@host]:[dest_dir]
-   ```
----
 ## 3. Bonding <a name="3.-Bonding"></a>
    > 네트워크 interface의 bandwidth를 늘리기 
    ### Bonding driver/interface 확인
