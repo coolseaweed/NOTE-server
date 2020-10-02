@@ -8,6 +8,8 @@
   [3. dd](#3.-dd)
 
   [4. authority](#4.-authority)
+  
+  [5. scp](#5.-scp)
 
 ## 1. screen <a name="1.-screen"></a>
 
@@ -47,7 +49,7 @@
   ```
   [ ! ] /test/bb 에 실제 용량이 써지므로 테스트 후 
 
-
+---
 ## 4. authority <a name="4.-authority"></a>
   ```
   # owner change
@@ -57,4 +59,18 @@
   $ chgrp <group> [filename]
   
   ```
+---
+## 5. scp <a name="5.-scp"></a>
 
+   ### 기본
+   ```bash
+   $ scp -P [port_num] [username]@[host_address]:<src_path> <dest_path>
+   
+   # 사용예제 (server wavfile local에서 재생)
+   $ scp -P 5000 coolseaweed@192.168.100.1:~/temp.wav /dev/stdout | play /dev/stdin 
+   ```
+   ### rsync
+   ```
+   $ sudo rsync -av -e 'ssh -p [Port num]' --delete [source_dir] [user@host]:[dest_dir]
+   ```
+---
