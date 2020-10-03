@@ -85,8 +85,12 @@
    $ iotop -oPa # 누적 I/O 량 측정
    $ iotop -o # output 만을 
    
-   #
+   # iostat
    $ iostat -dx 5
+   
+   # atop
+   $ atop
+   
    ```
 
 ---
