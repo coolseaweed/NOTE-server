@@ -81,7 +81,11 @@
 
    ### I/O monitoring
    ```bash
-   $ iotop -o
+   # iotop
+   $ iotop -oPa # 누적 I/O 량 측정
+   $ iotop -o # output 만을 
+   
+   #
    $ iostat -dx 5
    ```
 
