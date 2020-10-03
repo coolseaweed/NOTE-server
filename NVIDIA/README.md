@@ -97,8 +97,9 @@
   ### CUDA 버전에 맞는 cuDNN 라이브러리 다운로드
   [cuDNN archive](https://developer.nvidia.com/rdp/cudnn-archive)
 
+  ```html
   <span style="color:red">붉은 색</span>
-
+  ```
   [ ! ] tensorflow의 경우 버전마다 cuDNN 버전이 다르니 확인!
 
   ### cuDNN 설치
