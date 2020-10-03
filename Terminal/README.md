@@ -11,6 +11,8 @@
   
   [5. scp](#5.-scp)
 
+  [6. I/O](#6.-I/O)
+
 ## 1. screen <a name="1.-screen"></a>
 
 |Commands|Function|
@@ -73,4 +75,15 @@
    ```
    $ sudo rsync -av -e 'ssh -p [Port num]' --delete [source_dir] [user@host]:[dest_dir]
    ```
+   
 ---
+## 6. I/O <a name="6.-I/O"></a>
+
+   ### I/O monitoring
+   ```bash
+   $ iotop -o
+   $ iostat -dx 5
+   ```
+
+---
+
