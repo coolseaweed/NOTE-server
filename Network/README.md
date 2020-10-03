@@ -41,16 +41,20 @@
 
 ## 2. Network performance check <a name="2.-Network-performance-check"></a>
    ### iperf
-   
    - Server
    ```bash
    $ iperf -s
    ```
-
    - Client
    ```bash
    $ iperf -c <host ip> -P <parallel num>
-
+   ```
+   
+   ### speedtest-cli
+   ```bash
+   $ speedtest-cli -h
+   ```
+   
 ---
 
 
