@@ -41,6 +41,7 @@
 
 ## 2. Network performance check <a name="2.-Network-performance-check"></a>
    ### iperf
+   > To check bonding network speed 
    - Server
    ```bash
    $ iperf -s
@@ -51,6 +52,7 @@
    ```
    
    ### speedtest-cli
+   > To check upload & download speed
    ```bash
    $ speedtest-cli -h
    ```
