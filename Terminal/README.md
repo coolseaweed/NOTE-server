@@ -36,7 +36,7 @@
 ---
 
 ## 3. archive & compress <a name="3.-archive-&-compress"></a>
-> 보통 Linux환경에서는 파일들을 묶고(archive)난 후 압축(compress)하는 방식이 많이 사용된다.
+> 보통 Linux환경에서는 파일들을 묶고(archive)난 후 압축(compress)하는 방식(.tar.gz)이 많이 사용된다.
 >
 > 압축 확장자: .tar (**t**ape **ar**chives), .tgz(=tar.gz), bz2
 >
@@ -60,8 +60,25 @@
   $ tar -xvzf <src archive> # 압축 해제  
   ```
 
-  ### gzip/gunzip
+  ### gz(gzip/gunzip)
+  
+  |option|Function|
+  |:----|:----|
+  |-n|n은 1부터 9사이의 숫자를 지정 (숫자가 낮을수록 빠른 압축)|
+  |-c|압축 결과를 출력하고, 원본 파일은 그대로 둔다|
+  |-d|압축 해제 옵션 (gunzip과 같음)|
+  |-f|강제 압축|
+  |-l|압축 파일의 정보 출력|
+  |-r|디렉토리를 지정 시 디렉토리에 포함된 모든 파일 압축|
+  |-t|압축 파일 테스트|
+  |-v|자세한 정ㅂ도 출력|
+  |-h|도움말 출력|
+  |-V|버전 정보 출력|
 
+  ```
+  $ gzip <target filename> <src file/dir> #압축
+  $ gunzip <src archive> # 압축 해제
+  ```
 
   ### ** Reference
   
