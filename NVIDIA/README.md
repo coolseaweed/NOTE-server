@@ -33,7 +33,7 @@
   ### ** Trouble shooting
   기존에 설치된 프로그램과 충돌시 모두 삭제후 다시 설치
   ```bash
-  $ sudo apt --purge autoremove nvidia*
+  $ sudo apt --purge autoremove nvidia* # nvidia-docker도 삭제되므로 수정 필요 (DEBUG)
   ```
   
 ---
