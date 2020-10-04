@@ -5,7 +5,7 @@
 
   [2. find](#2.-find)
   
-  [3. ](#3.-)
+  [3. archive & compress](#3.-archive-&-compress)
 
   [4. authority](#4.-authority)
   
@@ -35,8 +35,10 @@
 
 ---
 
-## 3. dd <a name="2.-dd"></a>
-> File read write 속도 측정에 사용되는 커맨드
+## 3. archive & compress <a name="3.-archive-&-compress"></a>
+> 보통 Linux환경에서는 파일들을 묶고(archive)난 후 압축(compress)하는 방식이 많이 사용된다.
+> archive 확장자 := .tar (*t*ape *ar*chives)
+> 
 
 
 ---
