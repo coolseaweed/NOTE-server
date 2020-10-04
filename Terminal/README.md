@@ -86,12 +86,12 @@
 
 ---
 ## 4. Permission <a name="4.-Permission"></a>
-  ```
+  ```bash
   # owner change
-  $ chown <new-owner>  [filename]
+  $ chown [new-owner]  <filename>
 
   # owner change
-  $ chgrp <group> [filename]
+  $ chgrp [group] <filename>
 
   ```
 ---
