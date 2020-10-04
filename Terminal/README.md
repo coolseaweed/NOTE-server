@@ -42,7 +42,25 @@
 >
 > 압축률: tar << tgz(**recommand**) < bz2
 
+  ### tar
+  |option|Function|
+  |:----|:----|
+  |-x|압축 파일 풀기 (create)|
+  |-c|압축 파일 생성 (extract/get)|
+  |-z|압출 파일 풀기 (create)|
+  |-i|압출 파일 풀기 (create)|
+  |-p|압출 파일 풀기 (create)|
+  |-v|압출 파일 풀기 (create)|
+  |-f|압출 파일 풀기 (create)|
+  |--exclude|특정 폴더나 파일을 제외할때 사용 (리스트로 가능)|
 
+
+  ### gzip/gunzip
+
+
+  ### ** Reference
+  
+  [Link](https://ifuwanna.tistory.com/31)
 
 ---
 ## 4. authority <a name="4.-authority"></a>
