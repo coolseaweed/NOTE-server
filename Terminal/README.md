@@ -128,7 +128,7 @@
 
   ### I/O speed check
   ```bash
-  $ sudo dd if=/dev/zero of=<filename>  bs=1M count=1024 oflag=direct
+  $ sudo dd if=/dev/zero of=[filename]  bs=1M count=1024 oflag=direct
 
   # examples 
   $ sudo dd if=/dev/zero of=/test/bb  bs=1M count=1024 oflag=direct # local domain
