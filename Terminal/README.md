@@ -46,14 +46,19 @@
   |option|Function|
   |:----|:----|
   |-x|압축 파일 풀기 (create)|
-  |-c|압축 파일 생성 (extract/get)|
-  |-z|압출 파일 풀기 (create)|
-  |-i|압출 파일 풀기 (create)|
-  |-p|압출 파일 풀기 (create)|
-  |-v|압출 파일 풀기 (create)|
-  |-f|압출 파일 풀기 (create)|
+  |-c|압축 파일 생성 (extract / get)|
+  |-z|gzip 방식 사용 (gzip / gunzip / ungzip)|
+  |-j|bzup2 방식 사용 (bzip2)|
+  |-p|권한(permission)을 원봔과 동일하게 유지|
+  |-v|묶음/해제 과정을 화면에 표시 (verbose)|
+  |-f|파일 이름을 지정 (file)|
   |--exclude|특정 폴더나 파일을 제외할때 사용 (리스트로 가능)|
 
+  ```
+  $ tar -czvf <target filename> <src file/dir> # 압축1
+  $ tar -czvf <target filename> <src file/dir> --exclude <except file/dir1> # 압축2
+  $ tar -xvzf <src archive> # 압축 해제  
+  ```
 
   ### gzip/gunzip
 
