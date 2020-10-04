@@ -38,8 +38,10 @@
 ## 3. archive & compress <a name="3.-archive-&-compress"></a>
 > 보통 Linux환경에서는 파일들을 묶고(archive)난 후 압축(compress)하는 방식이 많이 사용된다.
 >
-> archive 확장자 := .tar (**t**ape **ar**chives)
-> 
+> 압축 확장자: .tar (**t**ape **ar**chives), .tgz(=tar.gz), bz2
+>
+> 압축률: tar << tgz(**recommand**) < bz2
+
 
 
 ---
