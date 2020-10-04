@@ -7,7 +7,7 @@
   
   [3. archive & compress](#3.-archive-&-compress)
 
-  [4. authority](#4.-authority)
+  [4. Permission](#4.-Permission)
   
   [5. scp](#5.-scp)
 
@@ -85,7 +85,7 @@
   [Link](https://ifuwanna.tistory.com/31)
 
 ---
-## 4. authority <a name="4.-authority"></a>
+## 4. Permission <a name="4.-Permission"></a>
   ```
   # owner change
   $ chown <new-owner>  [filename]
