@@ -71,7 +71,7 @@
   |-l|압축 파일의 정보 출력|
   |-r|디렉토리를 지정 시 디렉토리에 포함된 모든 파일 압축|
   |-t|압축 파일 테스트|
-  |-v|자세한 정ㅂ도 출력|
+  |-v|자세한 정보 출력|
   |-h|도움말 출력|
   |-V|버전 정보 출력|
 
@@ -134,7 +134,7 @@
   $ sudo dd if=/dev/zero of=/test/bb  bs=1M count=1024 oflag=direct # local domain
   $ sudo dd if=/dev/zero of=/mnt/data/bb  bs=1M count=1024 oflag=direct # mount domain
   ```
-  [ ! ] /test/bb 에 실제 용량이 써지므로 테스트 후 삭제
+  **[ ! ] /test/bb 에 실제 용량이 써지므로 테스트 후 삭제**
 
 ---
 
