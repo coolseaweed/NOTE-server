@@ -68,11 +68,9 @@
   Enter Toolkit Location  [ default is /usr/local/cuda-10.0 ]: # 엔터 치면 default로 자동설정 (recommand)
 
   Do you want to install a symbolic link at /usr/local/cuda?
-
   (y)es/(n)o/(q)uit: y
 
   Install the CUDA 10.0 Samples? # sample code 필요하면 y
-
   (y)es/(n)o/(q)uit: n
 
   ```
