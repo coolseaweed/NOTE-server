@@ -119,6 +119,7 @@
    or
    $ sudo systemctl restart networking.service
    $ sudo service networking restart
+   $ ethtool bond0 # bonding check
   ```
   
    ### ** Reference
