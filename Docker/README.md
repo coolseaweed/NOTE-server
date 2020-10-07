@@ -40,7 +40,7 @@
   sudo docker run hello-world
   ```
   
-  ### add sudo group docker
+  ### Add sudo group docker
   ```bash
   sudo usermod -aG docker ${USER}
   # try re-login
