@@ -79,7 +79,7 @@
 
   $ sudo apt-get install -y nvidia-docker2
   $ sudo systemctl restart docker
-  $ sudo docker run --rm --gpus all nvidia/cuda:11.0-base nvidia-smi # test
+  $ sudo docker run --rm --runtime=nvidia nvidia/cuda:11.0-base nvidia-smi # test
   ```
   
 
