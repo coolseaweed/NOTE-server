@@ -54,9 +54,8 @@
 <!--<img src="/img/cuda_install.JPG"  width="700" height="370">-->
   ### CUDA 설치
   ```bash
-  $ sudo sh cuda_10.0.130_410.48_linux.run
-  
-  <--  옵션 설정  -->
+  sudo sh cuda_10.0.130_410.48_linux.run
+  ----------------------------------------------------------------------------------------------------
   accept/decline/quit: accept
 
   Install NVIDIA Accelerated Graphics Driver # 위에서 설치했으므로 n
@@ -72,7 +71,7 @@
 
   Install the CUDA 10.0 Samples? # sample code 필요하면 y
   (y)es/(n)o/(q)uit: n
-
+  ----------------------------------------------------------------------------------------------------
   ```
   ### CUDA path 추가
 
@@ -94,8 +93,6 @@
 ## 3. cuDNN 설치 <a name="3.-cuDNN-설치"></a>
   ### CUDA 버전에 맞는 cuDNN 라이브러리 다운로드
   [cuDNN archive](https://developer.nvidia.com/rdp/cudnn-archive)
-
-  - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
 
   [ ! ] tensorflow의 경우 버전마다 cuDNN 버전이 다르니 확인!
 
