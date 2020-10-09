@@ -11,8 +11,8 @@
 
   ### GPU info 확인
   ```bash
-  $ sudo lshw -C display # 그래픽카드 정보 확인
-  $ ubuntu-drivers devices # 추천 드라이버 확인
+  sudo lshw -C display # 그래픽카드 정보 확인
+  ubuntu-drivers devices # 추천 드라이버 확인
   ```
   ### Ubuntu 16.04 LTS 
   나중에 깔게 되면 찾아서 넣음
@@ -22,18 +22,18 @@
 
   ### Ubuntu 18.04 LTS 
   ```bash
-  $ sudo add-apt-repository ppa:graphics-drivers/ppa # repository 추가
-  $ sudo apt update
-  $ apt-cache search nvidia | grep nvidia-driver-{recommand_version}
-  $ sudo apt-get install nvidia-driver-{recommand_version}
-  $ sudo shutdown -r now
-  $ nvidia-smi # 설치확인
+  sudo add-apt-repository ppa:graphics-drivers/ppa # repository 추가
+  sudo apt update
+  apt-cache search nvidia | grep nvidia-driver-{recommand_version}
+  sudo apt-get install nvidia-driver-{recommand_version}
+  sudo shutdown -r now
+  nvidia-smi # 설치확인
   ```
 
   ### ** Trouble shooting
   기존에 설치된 프로그램과 충돌시 모두 삭제후 다시 설치
   ```bash
-  $ sudo apt --purge autoremove nvidia* # nvidia-docker도 삭제되므로 수정 필요 (DEBUG)
+  sudo apt --purge autoremove nvidia* # nvidia-docker도 삭제되므로 수정 필요 (DEBUG)
   ```
   
 ---
@@ -79,14 +79,14 @@
   ```bash
   export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}} 
   export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-  $ nvcc --version # 설치 확인
+  nvcc --version # 설치 확인
   ```
   
   ### ** Trouble shooting
   기존에 설치된 cuda 폴더 삭제 후 다시 시도
   ```bash
-  $ sudo rm -rf /usr/local/cuda-10.0
-  $ sudo rm -rf /usr/local/cuda
+  sudo rm -rf /usr/local/cuda-10.0
+  sudo rm -rf /usr/local/cuda
   ```
 
 ---
@@ -101,12 +101,12 @@
 
   ### cuDNN 설치
   ```bash
-  $ sudo tar -xzvf cudnn-10.0-linux-x64-v7.6.5.32.tgz
-  $ cd cuda
-  $ sudo cp include/cudnn.h /usr/local/cuda/include
-  $ sudo cp lib64/libcudnn* /usr/local/cuda/lib64
-  $ sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
-  $ cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2 # cuDNN 버전 확인
+  sudo tar -xzvf cudnn-10.0-linux-x64-v7.6.5.32.tgz
+  cd cuda
+  sudo cp include/cudnn.h /usr/local/cuda/include
+  sudo cp lib64/libcudnn* /usr/local/cuda/lib64
+  sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
+  cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2 # cuDNN 버전 확인
   ```
 
    ### ** Trouble shooting
