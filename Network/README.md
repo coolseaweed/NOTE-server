@@ -37,6 +37,14 @@
    $ mkdir ~/.ssh
    $ vi ~/.ssh/authorized_keys # client에서 복사한 id_rsa.pub 내용 붙여넣기
    ```
+   
+   ### Port forwarding
+   ```bash
+   echo "/usr/sbin/sshd -p <portnum>">> ~/.bashrc
+   source ~/.bashrc
+   ```
+   
+   
 ---
 
 ## 2. Network performance check <a name="2.-Network-performance-check"></a>
