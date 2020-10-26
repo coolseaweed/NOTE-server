@@ -55,7 +55,7 @@
   
   
   ### ** Reference
-  [Link01](https://docs.docker.com/engine/install/ubuntu/)
+  https://docs.docker.com/engine/install/ubuntu/
   
   
   
@@ -84,7 +84,7 @@
 
 ---
 
-## 2. Commands <a name="2.-Commands"></a>
+## 3. Commands <a name="2.-Commands"></a>
 
   ```bash
   docker run -it -p [local_port]:[container_port] -v [local_dir]:[container_dir] --name [container_name] [docker_image] # 실행
@@ -102,12 +102,63 @@
   
   docker run --runtime=nvidia -it -p 5900:5900 -v ~/workspace:/workspace --name edges2portrait tom_workspace:base
   ```
+  * ctrl + p + q (background로 전환)
 ---
 
 
-## 3. 단축키 <a name="3.-단축키"></a>
-  * ctrl + p + q (background로 전환)
+## 4. container ssh  <a name="3.-단축키"></a>
+  ```bash
+  cd ~
+  sudo mkdir -p ~/SSH # this dir should be 'root'
+  git clone https://github.com/goodatlas/wav2letter_jpn.git
 
+  # Template
+  docker run -itd \
+             --hostname <hostname> \ 
+             --runtime=nvidia \
+             --privileged  \
+             --network=host \
+             -v ~/SSH:/root/.ssh/ \
+             -v /mnt/:/mnt/ \
+             -v ~/wav2letter_jpn:/root/host \ 
+             --name <container name> \
+             wav2letter/wav2letter:cuda-latest bash
+
+  docker exec -it <container_name> bash
+  echo "/usr/sbin/sshd -p <portnum>">> ~/.bashrc
+  ssh-keygen -A
+  mkdir -p /run/sshd
+  source ~/.bashrc
+  ```
+  
+  ### ~/.ssh/config
+  ```bash
+  # Authurization
+  cd ~/.ssh/
+  ssh-keygen -f /root/.ssh/id_rsa -q -N ''
+  cp -v /root/.ssh/id_rsa.pub /root/.ssh/authorized_keys
+
+
+  # ssh config
+  vi ~/.ssh/config
+  ------------------------------------------------------------
+  Host dkr-master
+      HostName 10.0.0.10
+      Port 2222
+
+  Host dkr-worker6
+      HostName 10.0.0.16
+      Port 2222
+
+  Host dkr-worker7
+      HostName 10.0.0.17
+      Port 2222
+  --------------------------------------------------------------
+
+  # check crossing ssh between docker containers
+  ssh dkr-worker7 
+  ssh dkr-worker6
+  ```
 
 ---
 
