@@ -3,13 +3,13 @@
 
   [1. screen](#1.-screen)
 
-  [2. find](#2.-find)
+  [2. File search](#2.-File-search)
   
   [3. archive & compress](#3.-archive-&-compress)
 
   [4. Permission](#4.-Permission)
   
-  [5. scp](#5.-scp)
+  [5. File transfer](#5.-File-transfer)
 
   [6. I/O](#6.-I/O)
 
@@ -30,7 +30,7 @@
 ## 2. find <a name="2.-find"></a>
 
   ```bash
-  $ find . -name "*.lst"
+  find . -name "*.lst"
   ```
 
 ---
@@ -55,9 +55,9 @@
   |--exclude|특정 폴더나 파일을 제외할때 사용 (리스트로 가능)|
 
   ```bash
-  $ tar -czvf <target filename> <src file/dir> # 압축1
-  $ tar -czvf <target filename> <src file/dir> --exclude <except file/dir1> # 압축2
-  $ tar -xvzf <src archive> # 압축 해제  
+  tar -czvf <target filename> <src file/dir> # 압축1
+  tar -czvf <target filename> <src file/dir> --exclude <except file/dir1> # 압축2
+  tar -xvzf <src archive> # 압축 해제  
   ```
 
   ### gz(gzip/gunzip)
@@ -76,8 +76,8 @@
   |-V|버전 정보 출력|
 
   ```bash
-  $ gzip <target filename> <src file/dir> #압축
-  $ gunzip <src archive> # 압축 해제
+  gzip <target filename> <src file/dir> #압축
+  gunzip <src archive> # 압축 해제
   ```
 
   ### ** Reference
@@ -88,25 +88,28 @@
 ## 4. Permission <a name="4.-Permission"></a>
   ```bash
   # owner change
-  $ chown [new-owner]  <filename>
+  chown [new-owner]  <filename>
 
   # owner change
-  $ chgrp [group] <filename>
+  chgrp [group] <filename>
+  
+  # both
+  chown <new_owner>:<group> <dir/filename>
 
   ```
 ---
-## 5. scp <a name="5.-scp"></a>
+## 5. File transfer <a name="5.-File-transfer"></a>
 
-  ### 기본
+  ### scp
   ```bash
-  $ scp -P [port_num] [username]@[host_address]:<src_path> <dest_path>
+  scp -P [port_num] [username]@[host_address]:<src_path> <dest_path>
 
   # 사용예제 (server wavfile local에서 재생)
-  $ scp -P 5000 coolseaweed@192.168.100.1:~/temp.wav /dev/stdout | play /dev/stdin 
+  scp -P 5000 coolseaweed@192.168.100.1:~/temp.wav /dev/stdout | play /dev/stdin 
   ```
   ### rsync
   ```
-  $ sudo rsync -av -e 'ssh -p [Port num]' --delete [source_dir] [user@host]:[dest_dir]
+  sudo rsync -av -e 'ssh -p [Port num]' --delete [source_dir] [user@host]:[dest_dir]
   ```
 
 ---
