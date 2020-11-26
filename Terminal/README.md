@@ -111,17 +111,11 @@
   
   * Local --> Remote
     ```bash
-    scp -P [port_num] [username]@[host_address]:<src_path> <dest_path>
-
-    # 사용예제 (server wavfile local에서 재생)
-    scp -P 5000 coolseaweed@192.168.100.1:~/temp.wav /dev/stdout | play /dev/stdin 
+    scp [option] <SRC> <host>@<IP address>:<DST>
     ```
   * Remote --> Local
     ```bash
-    scp -P [port_num] [username]@[host_address]:<src_path> <dest_path>
-
-    # 사용예제 (server wavfile local에서 재생)
-    scp -P 5000 coolseaweed@192.168.100.1:~/temp.wav /dev/stdout | play /dev/stdin 
+    scp [port_num] <host>@<IP address>:<SRC> <DST>
     ```
 
   ### rsync
