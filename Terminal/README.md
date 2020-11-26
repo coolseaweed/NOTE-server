@@ -134,9 +134,21 @@
   |-h|--human-readable|읽을 수 있는 형식으로 출력번호를 표시합니다|
   ||--progress|전송 중 동기화 진행률을 표시합니다|
 
-  ```
-  sudo rsync -av -e 'ssh -p [Port num]' --delete [source_dir] [user@host]:[dest_dir]
-  ```
+  * Local --> Remote
+    ```bash
+    rsync [option] <SRC> <host>@<IP address>:<DST>
+    ```
+  * Remote --> Local
+    ```bash
+    rsync [option] <host>@<IP address>:<SRC> <DST>
+    ```
+  * CMD 모음
+    ```bash
+    sudo rsync -rltD --info=progress2 -u -e 'ssh [option]' <SRC> <host>@<ip_address>:<DST> > trans.log 2>&1
+    sudo rsync -av -e 'ssh [option]' <host>@<ip_address>:<DST> <SRC> > trans.log 2>&1
+    ```
+
+
   
   ### ** Reference
   [About scp](https://twpower.github.io/138-send-file-using-scp-command)
