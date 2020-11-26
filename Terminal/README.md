@@ -43,7 +43,7 @@
 압축률: tar << tgz(**recommand**) < bz2
 
   ### tar
-  |option|Function|
+  |Option|Function|
   |:----|:----|
   |-x|압축 파일 풀기 (create)|
   |-c|압축 파일 생성 (extract / get)|
@@ -62,7 +62,7 @@
 
   ### gz(gzip/gunzip)
   
-  |option|Function|
+  |Option|Function|
   |:----|:----|
   |-n|n은 1부터 9사이의 숫자를 지정 (숫자가 낮을수록 빠른 압축)|
   |-c|압축 결과를 출력하고, 원본 파일은 그대로 둔다|
@@ -101,7 +101,7 @@
 ## 5. File transfer <a name="5.-File-transfer"></a>
 
   ### scp
-  |option|Function|
+  |Option|Function|
   |:----|:----|
   |-r|재귀적으로 모든 폴더들을 복사. 폴더를 복사할 때 사용하는 옵션으로 이때 전송하고자 하는 대상은 폴더로 지정|
   |-P|ssh 포트를 지정하는 옵션|
@@ -119,7 +119,7 @@
     ```
 
   ### rsync
-  |option|detail|Function|
+  |Option|Detail|Function|
   |:----|:----|:----|
   |-v|--verbose|상세출력|
   |-q|--quiet|메세지 출력 억제|
