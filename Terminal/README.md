@@ -119,7 +119,7 @@
     ```
 
   ### rsync
-  |option||Function|
+  |option|detail|Function|
   |:----|:----|:----|
   |-v|--verbose|상세출력|
   |-q|--quiet|메세지 출력 억제|
