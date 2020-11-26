@@ -119,9 +119,28 @@
     ```
 
   ### rsync
+  |option|Function|
+  |:----|:----|:----|
+  |-v|--verbose|상세출력|
+  |-q|--quiet|메세지 출력 억제|
+  |-a|--archive|아카이브 파일 및 동기화 중 디렉토리(-rlptgoD와 동일)|
+  |-r|--recursive|동기화 파일 및 디렉토리 |
+  |-b|--backup|동기화 중에 백업을 수행합니다|
+  |-u|--update|대상 파일이 더 최신인 경우 소스에서 대상으로 파일을 복사하지 않습니다|
+  |-l|--links|동기화 중 심볼릭 링크를 심볼릭 링크로 복사|
+  |-n|--dry-run|동기화 없이 시험 실행을 수행|
+  |-e|--rsh=CMD|rsynce에서 사용할 원격 쉘을 언급|
+  |-z|--compress|압축 파일 데이터|
+  |-h|--human-readable|읽을 수 있는 형식으로 출력번호를 표시합니다|
+  ||--progress|전송 중 동기화 진행률을 표시합니다|
+
   ```
   sudo rsync -av -e 'ssh -p [Port num]' --delete [source_dir] [user@host]:[dest_dir]
   ```
+  
+  ### ** Reference
+  [About scp](https://twpower.github.io/138-send-file-using-scp-command)
+  [About rsync](https://blueyikim.tistory.com/562)
 
 ---
 ## 6. I/O <a name="6.-I/O"></a>
