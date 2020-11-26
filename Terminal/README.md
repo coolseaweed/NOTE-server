@@ -101,13 +101,7 @@
 ## 5. File transfer <a name="5.-File-transfer"></a>
 
   ### scp
-  |Option|Function|
-  |:----|:----|
-  |-r|재귀적으로 모든 폴더들을 복사. 폴더를 복사할 때 사용하는 옵션으로 이때 전송하고자 하는 대상은 폴더로 지정|
-  |-P|ssh 포트를 지정하는 옵션|
-  |-i|ssh 키파일과 같은 identity file의 경로를 지정하는 옵션|
-  |-v|verbose 모드로 상세내용을 보며 디버깅을 할 때 사용|
-  |-p|파일의 수정 시간과 권한을 유지|
+  [Detail](https://twpower.github.io/138-send-file-using-scp-command)
   
   * Local --> Remote
     ```bash
@@ -119,20 +113,7 @@
     ```
 
   ### rsync
-  |Option|Detail|Function|
-  |:----|:----|:----|
-  |-v|--verbose|상세출력|
-  |-q|--quiet|메세지 출력 억제|
-  |-a|--archive|아카이브 파일 및 동기화 중 디렉토리(-rlptgoD와 동일)|
-  |-r|--recursive|동기화 파일 및 디렉토리 |
-  |-b|--backup|동기화 중에 백업을 수행합니다|
-  |-u|--update|대상 파일이 더 최신인 경우 소스에서 대상으로 파일을 복사하지 않습니다|
-  |-l|--links|동기화 중 심볼릭 링크를 심볼릭 링크로 복사|
-  |-n|--dry-run|동기화 없이 시험 실행을 수행|
-  |-e|--rsh=CMD|rsynce에서 사용할 원격 쉘을 언급|
-  |-z|--compress|압축 파일 데이터|
-  |-h|--human-readable|읽을 수 있는 형식으로 출력번호를 표시합니다|
-  ||--progress|전송 중 동기화 진행률을 표시합니다|
+  [Detail](https://blueyikim.tistory.com/562)
 
   * Local --> Remote
     ```bash
@@ -147,13 +128,6 @@
     sudo rsync -rltD --info=progress2 -u -e 'ssh [option]' <SRC> <host>@<ip_address>:<DST> > trans.log 2>&1
     sudo rsync -av -e 'ssh [option]' <host>@<ip_address>:<DST> <SRC> > trans.log 2>&1
     ```
-
-
-  
-  ### ** Reference
-  [About scp](https://twpower.github.io/138-send-file-using-scp-command)
-  
-  [About rsync](https://blueyikim.tistory.com/562)
 
 ---
 ## 6. I/O <a name="6.-I/O"></a>
