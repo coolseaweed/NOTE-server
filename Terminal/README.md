@@ -1,17 +1,57 @@
 # 자주쓰는 터미널 명령어 정리
 
-
-  [1. screen](#1.-screen)
+  [1. File transfer](#1.-File-transfer)
 
   [2. File search](#2.-File-search)
+
+
+  [1. screen](#1.-screen)
   
   [3. archive & compress](#3.-archive-&-compress)
 
   [4. Permission](#4.-Permission)
   
-  [5. File transfer](#5.-File-transfer)
-
   [6. I/O](#6.-I/O)
+
+## 1. File transfer <a name="1.-File-transfer"></a>
+
+  ### scp
+  [Detail](https://twpower.github.io/138-send-file-using-scp-command)
+  
+  * Local --> Remote
+    ```bash
+    scp [option] <SRC> <host>@<IP address>:<DST>
+    ```
+  * Remote --> Local
+    ```bash
+    scp [port_num] <host>@<IP address>:<SRC> <DST>
+    ```
+
+  ### rsync
+  [Detail](https://blueyikim.tistory.com/562)
+
+  * Local --> Remote
+    ```bash
+    rsync [option] <SRC> <host>@<IP address>:<DST>
+    ```
+  * Remote --> Local
+    ```bash
+    rsync [option] <host>@<IP address>:<SRC> <DST>
+    ```
+  * CMD 모음
+    ```bash
+    sudo rsync -rltD --info=progress2 -u -e 'ssh [option]' <SRC> <host>@<ip_address>:<DST> > trans.log 2>&1
+    sudo rsync -av -e 'ssh [option]' <host>@<ip_address>:<DST> <SRC> > trans.log 2>&1
+    ```
+
+---
+## 2. File search <a name="2.-File-search"></a>
+
+  ```bash
+  find . -name "*.lst"
+  ```
+
+---
 
 ## 1. screen <a name="1.-screen"></a>
 
@@ -27,13 +67,6 @@
 
 ---
 
-## 2. find <a name="2.-find"></a>
-
-  ```bash
-  find . -name "*.lst"
-  ```
-
----
 
 ## 3. archive & compress <a name="3.-archive-&-compress"></a>
 
@@ -67,38 +100,7 @@
 
   ```
 ---
-## 5. File transfer <a name="5.-File-transfer"></a>
 
-  ### scp
-  [Detail](https://twpower.github.io/138-send-file-using-scp-command)
-  
-  * Local --> Remote
-    ```bash
-    scp [option] <SRC> <host>@<IP address>:<DST>
-    ```
-  * Remote --> Local
-    ```bash
-    scp [port_num] <host>@<IP address>:<SRC> <DST>
-    ```
-
-  ### rsync
-  [Detail](https://blueyikim.tistory.com/562)
-
-  * Local --> Remote
-    ```bash
-    rsync [option] <SRC> <host>@<IP address>:<DST>
-    ```
-  * Remote --> Local
-    ```bash
-    rsync [option] <host>@<IP address>:<SRC> <DST>
-    ```
-  * CMD 모음
-    ```bash
-    sudo rsync -rltD --info=progress2 -u -e 'ssh [option]' <SRC> <host>@<ip_address>:<DST> > trans.log 2>&1
-    sudo rsync -av -e 'ssh [option]' <host>@<ip_address>:<DST> <SRC> > trans.log 2>&1
-    ```
-
----
 ## 6. I/O <a name="6.-I/O"></a>
 
   ### I/O monitoring
