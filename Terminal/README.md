@@ -109,21 +109,21 @@
   |-v|verbose 모드로 상세내용을 보며 디버깅을 할 때 사용|
   |-p|파일의 수정 시간과 권한을 유지|
   
-  #### Local --> Remote
-  ```bash
-  scp -P [port_num] [username]@[host_address]:<src_path> <dest_path>
+    * Local --> Remote
+    ```bash
+    scp -P [port_num] [username]@[host_address]:<src_path> <dest_path>
 
-  # 사용예제 (server wavfile local에서 재생)
-  scp -P 5000 coolseaweed@192.168.100.1:~/temp.wav /dev/stdout | play /dev/stdin 
-  ```
-  #### Remote --> Local
-  ```bash
-  scp -P [port_num] [username]@[host_address]:<src_path> <dest_path>
+    # 사용예제 (server wavfile local에서 재생)
+    scp -P 5000 coolseaweed@192.168.100.1:~/temp.wav /dev/stdout | play /dev/stdin 
+    ```
+    * Remote --> Local
+    ```bash
+    scp -P [port_num] [username]@[host_address]:<src_path> <dest_path>
 
-  # 사용예제 (server wavfile local에서 재생)
-  scp -P 5000 coolseaweed@192.168.100.1:~/temp.wav /dev/stdout | play /dev/stdin 
-  ```
-  
+    # 사용예제 (server wavfile local에서 재생)
+    scp -P 5000 coolseaweed@192.168.100.1:~/temp.wav /dev/stdout | play /dev/stdin 
+    ```
+
   ### rsync
   ```
   sudo rsync -av -e 'ssh -p [Port num]' --delete [source_dir] [user@host]:[dest_dir]
