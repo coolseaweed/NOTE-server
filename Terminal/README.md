@@ -101,12 +101,29 @@
 ## 5. File transfer <a name="5.-File-transfer"></a>
 
   ### scp
+  |option|Function|
+  |:----|:----|
+  |-r|재귀적으로 모든 폴더들을 복사. 폴더를 복사할 때 사용하는 옵션으로 이때 전송하고자 하는 대상은 폴더로 지정|
+  |-P|ssh 포트를 지정하는 옵션|
+  |-i|ssh 키파일과 같은 identity file의 경로를 지정하는 옵션|
+  |-v|verbose 모드로 상세내용을 보며 디버깅을 할 때 사용|
+  |-p|파일의 수정 시간과 권한을 유지|
+  
+  #### Local --> Remote
   ```bash
   scp -P [port_num] [username]@[host_address]:<src_path> <dest_path>
 
   # 사용예제 (server wavfile local에서 재생)
   scp -P 5000 coolseaweed@192.168.100.1:~/temp.wav /dev/stdout | play /dev/stdin 
   ```
+  #### Remote --> Local
+  ```bash
+  scp -P [port_num] [username]@[host_address]:<src_path> <dest_path>
+
+  # 사용예제 (server wavfile local에서 재생)
+  scp -P 5000 coolseaweed@192.168.100.1:~/temp.wav /dev/stdout | play /dev/stdin 
+  ```
+  
   ### rsync
   ```
   sudo rsync -av -e 'ssh -p [Port num]' --delete [source_dir] [user@host]:[dest_dir]
