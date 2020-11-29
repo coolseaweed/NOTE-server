@@ -30,7 +30,7 @@
    ```  
    $ cd /to/your/project/dir/
    $ git init
-   $ git remote add [git url]
+   $ git remote add <git url>
    $ git push -u origin master
    ```
    
