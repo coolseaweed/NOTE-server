@@ -38,6 +38,13 @@
    $ vi ~/.ssh/authorized_keys # client에서 복사한 id_rsa.pub 내용 붙여넣기
    ```
    ### ~/.ssh 권한 설정
+   ```
+   chmod 700 ~/.ssh
+   chmod 600 ~/.ssh/id_rsa
+   chmod 644 ~/.ssh/id_rsa.pub
+   chmod 644 ~/.ssh/authorized_keys
+   chmod 644 ~/.ssh/known_hosts
+   ```
    [link](https://linuxize.com/post/using-the-ssh-config-file/)
    
    ### Port forwarding
