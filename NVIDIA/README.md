@@ -22,8 +22,8 @@
   ```bash
   sudo add-apt-repository ppa:graphics-drivers/ppa # repository 추가
   sudo apt update
-  apt-cache search nvidia | grep nvidia-driver-{recommand_version}
-  sudo apt-get install nvidia-driver-{recommand_version}
+  apt-cache search nvidia | grep nvidia-{recommand_version}
+  sudo apt-get install nvidia-{recommand_version}
   sudo shutdown -r now
   nvidia-smi # 설치확인
   ```
