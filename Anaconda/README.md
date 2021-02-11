@@ -8,7 +8,12 @@
 ## 1. miniconda install  <a name="1.-miniconda-install"></a>
 
   ```
+  # Linux
   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+  
+  # Mac
+  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+  
   bash Miniconda3-latest-Linux-x86_64.sh
   source ~/.bashrc
   rm Miniconda3-latest-Linux-x86_64.sh # optional
