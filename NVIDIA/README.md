@@ -15,13 +15,19 @@
   ubuntu-drivers devices # 추천 드라이버 확인
   ```
 
-  ### Ubuntu
+  ### Ubuntu (x86_64 기준)
   ```bash
-  sudo add-apt-repository ppa:graphics-drivers/ppa # repository 추가
-  sudo apt update
+  release="ubuntu"$(lsb_release -sr | sed -e "s/\.//g")
+  sudo apt-get install sudo gnupg
+  sudo apt-key adv --fetch-keys "http://developer.download.nvidia.com/compute/cuda/repos/"$release"/x86_64/7fa2af80.pub"
+  sudo sh -c 'echo "deb http://developer.download.nvidia.com/compute/cuda/repos/'$release'/x86_64 /" > /etc/apt/sources.list.d/nvidia-cuda.list
+  sudo sh -c 'echo "deb http://developer.download.nvidia.com/compute/machine-learning/repos/'$release'/x86_64 /" > /etc/apt/sources.list.d/nvidia-machine-learning.list'
+  sudo apt-get update
+  -------------------------------------
+  ubuntu-drivers devices # 추천 드라이버 확인
   apt-cache search nvidia | grep nvidia-{recommand_version}
   sudo apt-get install nvidia-{recommand_version}
-  sudo shutdown -r now
+  sudo reboot
   nvidia-smi # 설치확인
   ```
 
