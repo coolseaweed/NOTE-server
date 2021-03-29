@@ -29,9 +29,7 @@
   기존에 설치된 프로그램과 충돌시 모두 삭제후 다시 설치
   ```bash
   dpkg -l | grep nvidia
-  sudo apt purge nvidia-xxx.xx -y
-  sudo apt autoremove -y
-  sudo apt autoclean
+  sudo apt purge --auto-remove -y nvidia-xxx.xx
   ```
   
 ---
