@@ -9,12 +9,6 @@
 
 ## 1. NVIDIA driver 설치 <a name="1.-NVIDIA-driver-설치"></a>
 
-  ### GPU info 확인
-  ```bash
-  sudo lshw -C display # 그래픽카드 정보 확인
-  ubuntu-drivers devices # 추천 드라이버 확인
-  ```
-
   ### Ubuntu (x86_64 기준)
   ```bash
   release="ubuntu"$(lsb_release -sr | sed -e "s/\.//g")
@@ -24,9 +18,9 @@
   sudo sh -c 'echo "deb http://developer.download.nvidia.com/compute/machine-learning/repos/'$release'/x86_64 /" > /etc/apt/sources.list.d/nvidia-machine-learning.list'
   sudo apt-get update
   -------------------------------------
-  ubuntu-drivers devices # 추천 드라이버 확인
-  apt-cache search nvidia | grep nvidia-{recommand_version}
-  sudo apt-get install nvidia-{recommand_version}
+  ubuntu-drivers devices # 설치 가능 드라이버 확인
+  apt-cache search nvidia | grep nvidia-{target_version}
+  sudo apt-get install nvidia-{target_version}
   sudo reboot
   nvidia-smi # 설치확인
   ```
