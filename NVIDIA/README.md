@@ -14,11 +14,8 @@
   sudo lshw -C display # 그래픽카드 정보 확인
   ubuntu-drivers devices # 추천 드라이버 확인
   ```
-  ### Ubuntu 16.04 LTS 
-  나중에 깔게 되면 찾아서 넣음
-  
 
-  ### Ubuntu 18.04 LTS 
+  ### Ubuntu
   ```bash
   sudo add-apt-repository ppa:graphics-drivers/ppa # repository 추가
   sudo apt update
