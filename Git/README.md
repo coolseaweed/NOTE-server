@@ -8,13 +8,23 @@
 ## 1. Github commands <a name="1.-Github-commands"></a>
 
    ### Github repository <--> local directory 
-   ```  
+   ```bash  
    $ cd /to/your/project/dir/
    $ git init
    $ git remote add origin <git url>
    $ git push -u origin master
    ```
 
+   ### Upload
+   ```bash
+   $ git status # check current status
+   $ git add <file|directory> 
+   $ git commit -m "message"
+   $ git push 
+
+   # commit cancel
+   $ git reset HEAD ^  
+   ```
 
 
 
@@ -28,16 +38,6 @@
    ```
 
 
-   ### Upload
-   ```bash
-   $ git status 
-   $ git add <file/directory> 
-   $ git commit -m "message"
-   $ git push 
-
-   # commit cancel
-   $ git reset HEAD ^  
-   ```
 
    
    ### Ignore
