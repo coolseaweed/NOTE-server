@@ -40,10 +40,16 @@
 
 
    
-   ### Ignore
+   ### Ignore files
    ```bash
-   $ echo '<ignore_filenane>' >> .gitignore 
-   $ git add .gitignore
+   echo -n > .gitignore # write down unwanted file list
+   ----------------------------------------------------
+   .idea/
+   *.log
+   db.sqlite3
+   . . .
+   ----------------------------------------------------
+   git add .gitignore
    ```
 
 
