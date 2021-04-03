@@ -23,7 +23,7 @@
    $ git push 
 
    # commit cancel
-   $ git reset HEAD ^  
+   $ git reset HEAD^  
    ```
 
 
