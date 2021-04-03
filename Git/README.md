@@ -6,7 +6,20 @@
 
 
 ## 1. Github commands <a name="1.-Github-commands"></a>
-   
+
+   ### Github repository <--> local directory 
+   ```  
+   $ cd /to/your/project/dir/
+   $ git init
+   $ git remote add origin <git url>
+   $ git push -u origin master
+   ```
+
+
+
+
+
+
    ### Configuration
    ```bash
    $ git config --global user.name "coolseaweed"
@@ -26,13 +39,6 @@
    $ git reset HEAD ^  
    ```
 
-   ### Git repo <--> local dir 
-   ```  
-   $ cd /to/your/project/dir/
-   $ git init
-   $ git remote add <repo name> <git url>
-   $ git push -u origin master
-   ```
    
    ### Ignore
    ```bash
