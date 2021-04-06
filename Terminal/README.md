@@ -5,7 +5,7 @@
   [2. File search](#2.-File-search)
 
 
-  [1. screen](#1.-screen)
+  [3. screen](#3.-screen)
   
   [3. archive & compress](#3.-archive-&-compress)
 
@@ -53,7 +53,7 @@
 
 ---
 
-## 1. screen <a name="1.-screen"></a>
+## 3. screen <a name="3.-screen"></a>
 
   |Commands|Function|
   |:----|:----|
@@ -61,8 +61,11 @@
   |screen -ls|현재 생성된 screen list |
   |screen -r [name]|deatach 되어 있는 screen attach|
   |screen -X -S [name] kill|[name]screen 삭제|
-  |screen -r d|sreen 강제로 detach|
-  |Ctrl+a+d|screen deatch 단축키|
+  |screen -rd [name]|sreen 재시작|
+  |ctrl+a+d|screen deatch 단축키|
+  |ctrl+a+shift+'|다른 screen session  선택|
+  |ctrl+a+shift+a|screen session 이름 편집|
+
 
 
 ---
