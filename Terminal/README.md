@@ -40,8 +40,7 @@
     ```
   * CMD 모음
     ```bash
-    sudo rsync -rltD --info=progress2 -u -e 'ssh [option]' <SRC> <host>@<ip_address>:<DST> > trans.log 2>&1
-    sudo rsync -av -e 'ssh [option]' <host>@<ip_address>:<DST> <SRC> > trans.log 2>&1
+    sudo rsync -avu --info=progress2 -e 'ssh [option]' <host>@<ip_address>:<DST> <SRC> > trans.log 2>&1
     ```
 
 ---
