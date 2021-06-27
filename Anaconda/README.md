@@ -1,11 +1,13 @@
 
 # Anaconda guide
-   [1. miniconda install](#1.-miniconda-install)
+   [Install](Install)
    
-   [2. Commands](#2.-Commands)
+   [Commands](Commands)
+
+   [References](References)
 
 
-## 1. miniconda install  <a name="1.-miniconda-install"></a>
+## Install  <a name="Install"></a>
 
   ```
   # Linux
@@ -19,10 +21,10 @@
   rm Miniconda3-latest-Linux-x86_64.sh # optional
   ```
   
-## 2. Commands  <a name="2.-Commands"></a>
+## Commands  <a name="Commands"></a>
   ```
   nothing
   ```
-
-
+## References <a name="References"></a>
+Down Link [https://docs.conda.io/en/master/miniconda.html]
 ---
