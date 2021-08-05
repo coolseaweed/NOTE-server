@@ -53,6 +53,19 @@
    ```
 
 
+   ### ssh key <---> repo.
+   ```bash
+   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+   -------------------------------------------------------
+   Generating public/private rsa key pair. 
+   Enter file in which to save the key (/Users/Home/.ssh/id_rsa): /Users/Home/.ssh/id_rsa_${repo_name}
+   -------------------------------------------------------
+   ssh-add ~/.ssh/id_rsa_${repo_name}
+   ```
+   
+   
+
+
 ---
   
   
