@@ -1,5 +1,6 @@
 # Git guide
    [Deploy key](#content1)
+   
    [Push & Pull](#content2)
 
 
@@ -53,6 +54,27 @@
 
 ## Push & Pull <a name="content2"></a>
 
+   ### Push
+   ```bash
+   git status # check current status
+   git add <file|dir.> 
+   git commit -m "message"
+   git push 
+
+   # commit cancel
+   $ git reset HEAD <staged file|dir.>
+   ```
+   ### Pull
+   ```bash
+   git stash # save current changes
+   git pull
+   git stash apply 
+
+   # confilct happend, resolve conflicts and commit again
+   ```
+   
+   
+
 
    ### Github repository <--> local directory 
    ```bash  
@@ -62,16 +84,7 @@
    $ git push -u origin master
    ```
 
-   ### Upload
-   ```bash
-   $ git status # check current status
-   $ git add <file|directory> 
-   $ git commit -m "message"
-   $ git push 
 
-   # commit cancel
-   $ git reset HEAD^  
-   ```
 
 
 
