@@ -68,9 +68,29 @@
    # add ~/.ssh/id_rsa_${repo_name}.pub to repositoy deploy key
    ```
    
-   #### multi repository in same server
+   #### ** multi repository in same server
+   ```bash
+   touch ~/.ssh/config
+   --------------------------------------
+   # repo-1
+   Host github.com
+      HostName github.com
+      User ${USER}
+      AddKeysToAgent yes
+      IdentityFile ~/.ssh/id_rsa_${repo-1-name}
+
+   # repo-2
+   Host github.com
+      HostName github.com
+      User ${USER}
+      AddKeysToAgent yes
+      IdentityFile ~/.ssh/id_rsa_${repo-2-name}
    
-   ### ** Trouble shooting
+   ...
+   ----------------------------------------------
+   ```
+   
+   #### ** Trouble shooting
    `Could not open a connection to your authentication agent` 라고 권한 문제가 생길경우
    ```bash
    eval $(ssh-agent)
