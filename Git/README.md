@@ -1,11 +1,56 @@
 # Git guide
-   [1. Github](#1.-Github)
-
-   [2. Gitlab](#2.-Gitlab)
+   [Deploy key](#Deploy-key)
 
 
+## Deploy key <a name="Deploy-key"></a>
 
-## 1. Github <a name="1.-Github"></a>
+
+   ### ssh-keygen
+   ```bash
+   ssh-keygen -t rsa -b 4096 -C ${your_e-mail}
+   -------------------------------------------------------
+   Generating public/private rsa key pair. 
+   Enter file in which to save the key (/Users/Home/.ssh/id_rsa): /Users/Home/.ssh/id_rsa_${repo_name}
+   ...
+   -------------------------------------------------------
+   
+   ssh-agent -s
+   ssh-add ~/.ssh/id_rsa_${repo_name}
+   
+   # add ~/.ssh/id_rsa_${repo_name}.pub to repositoy deploy key
+   ```
+   
+   ### multi repository in same server
+   ```bash
+   touch ~/.ssh/config
+   --------------------------------------
+   # repo-1
+   Host github.com
+      HostName github.com
+      User ${USER}
+      AddKeysToAgent yes
+      IdentityFile ~/.ssh/id_rsa_${repo-1-name}
+
+   # repo-2
+   Host github.com
+      HostName github.com
+      User ${USER}
+      AddKeysToAgent yes
+      IdentityFile ~/.ssh/id_rsa_${repo-2-name}
+   
+   ...
+   ----------------------------------------------
+   ```
+   
+   ### ** Trouble shooting
+   `Could not open a connection to your authentication agent` 라고 권한 문제가 생길경우
+   ```bash
+   eval $(ssh-agent)
+   ```
+   
+
+
+
 
    ### Github repository <--> local directory 
    ```bash  
@@ -53,49 +98,6 @@
    ```
 
 
-   ### Repository deploy key (ssh-key)
-   ```bash
-   ssh-keygen -t rsa -b 4096 -C ${your_e-mail}
-   -------------------------------------------------------
-   Generating public/private rsa key pair. 
-   Enter file in which to save the key (/Users/Home/.ssh/id_rsa): /Users/Home/.ssh/id_rsa_${repo_name}
-   ...
-   -------------------------------------------------------
-   
-   ssh-agent -s
-   ssh-add ~/.ssh/id_rsa_${repo_name}
-   
-   # add ~/.ssh/id_rsa_${repo_name}.pub to repositoy deploy key
-   ```
-   
-   #### ** multi repository in same server
-   ```bash
-   touch ~/.ssh/config
-   --------------------------------------
-   # repo-1
-   Host github.com
-      HostName github.com
-      User ${USER}
-      AddKeysToAgent yes
-      IdentityFile ~/.ssh/id_rsa_${repo-1-name}
-
-   # repo-2
-   Host github.com
-      HostName github.com
-      User ${USER}
-      AddKeysToAgent yes
-      IdentityFile ~/.ssh/id_rsa_${repo-2-name}
-   
-   ...
-   ----------------------------------------------
-   ```
-   
-   #### ** Trouble shooting
-   `Could not open a connection to your authentication agent` 라고 권한 문제가 생길경우
-   ```bash
-   eval $(ssh-agent)
-   ```
-   
 
 
 ---
