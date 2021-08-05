@@ -1,5 +1,6 @@
 # Git guide
    [Deploy key](#content1)
+   [Push & Pull](#content2)
 
 
 ## Deploy key <a name="content1"></a>
@@ -50,6 +51,7 @@
    
 
 
+## Push & Pull <a name="content2"></a>
 
 
    ### Github repository <--> local directory 
