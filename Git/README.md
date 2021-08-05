@@ -1,8 +1,8 @@
 # Git guide
-   [add deploy key](#deploy-key)
+   [Deploy key](#content1)
 
 
-## add deploy key <a name="deploy-key"></a>
+## Deploy key <a name="content1"></a>
 
 
    ### ssh-keygen
