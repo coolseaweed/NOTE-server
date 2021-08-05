@@ -66,7 +66,7 @@
    ssh-add ~/.ssh/id_rsa_${repo_name}
    
    ```
-   *** Trouble shooting
+   ### ** Trouble shooting
    `Could not open a connection to your authentication agent` 라고 권한 문제가 생길경우
    ```bash
    eval $(ssh-agent)
