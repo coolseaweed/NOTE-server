@@ -1,4 +1,4 @@
-# Git 가이드
+# Git guide
    [1. Github](#1.-Github)
 
    [2. Gitlab](#2.-Gitlab)
@@ -53,7 +53,7 @@
    ```
 
 
-   ### ssh key <---> repo.
+   ### Repository deploy key (ssh-key)
    ```bash
    ssh-keygen -t rsa -b 4096 -C ${your_e-mail}
    -------------------------------------------------------
@@ -65,7 +65,11 @@
    ssh-agent -s
    ssh-add ~/.ssh/id_rsa_${repo_name}
    
+   # add ~/.ssh/id_rsa_${repo_name}.pub to repositoy deploy key
    ```
+   
+   #### multi repository in same server
+   
    ### ** Trouble shooting
    `Could not open a connection to your authentication agent` 라고 권한 문제가 생길경우
    ```bash
