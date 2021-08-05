@@ -1,11 +1,11 @@
 # Git 가이드
-   [1. Github commands](#1.-Github-commands)
+   [1. Github](#1.-Github)
 
-   [2. Gitlab commands](#2.-Gitlab-commands)
+   [2. Gitlab](#2.-Gitlab)
 
 
 
-## 1. Github commands <a name="1.-Github-commands"></a>
+## 1. Github <a name="1.-Github"></a>
 
    ### Github repository <--> local directory 
    ```bash  
@@ -55,14 +55,22 @@
 
    ### ssh key <---> repo.
    ```bash
-   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+   ssh-keygen -t rsa -b 4096 -C ${your_e-mail}
    -------------------------------------------------------
    Generating public/private rsa key pair. 
    Enter file in which to save the key (/Users/Home/.ssh/id_rsa): /Users/Home/.ssh/id_rsa_${repo_name}
+   ...
    -------------------------------------------------------
-   ssh-add ~/.ssh/id_rsa_${repo_name}
-   ```
    
+   ssh-agent -s
+   ssh-add ~/.ssh/id_rsa_${repo_name}
+   
+   ```
+   *** Trouble shooting
+   `Could not open a connection to your authentication agent` 라고 권한 문제가 생길경우
+   ```bash
+   eval $(ssh-agent)
+   ```
    
 
 
