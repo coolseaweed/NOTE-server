@@ -3,6 +3,8 @@
    
    [Push & Pull](#content2)
 
+   [.gitignore](#content3)
+
 
 ## Deploy key <a name="content1"></a>
 
@@ -50,7 +52,7 @@
    eval $(ssh-agent)
    ```
    
-
+---
 
 ## Push & Pull <a name="content2"></a>
 
@@ -72,47 +74,33 @@
 
    # confilct happend, resolve conflicts and commit again
    ```
-   
-   
 
+---
 
-   ### Github repository <--> local directory 
-   ```bash  
-   $ cd /to/your/project/dir/
-   $ git init
-   $ git remote add origin <git url>
-   $ git push -u origin master
-   ```
-
-
-
-
-
-
-
-   ### Configuration
+## .gitignore <a name="content3"></a>
    ```bash
-   $ git config --global user.name "coolseaweed"
-   $ git config --global user.email "jeellato@gmail.com"
-   $ git config --list # can be changed at ~/.gitconfig
-   ```
-
-
-
-   
-   ### Ignore files
-   ```bash
-   echo -n > .gitignore # write down unwanted file list
+   touch .gitignore # write down unwanted file list
    ----------------------------------------------------
-   .idea/
-   *.log
+   __pycache__
+   log
+   temp
    db.sqlite3
    . . .
    ----------------------------------------------------
    git add .gitignore
    ```
 
+---
+   
+   
 
+   ### Github repository <--> local directory 
+   ```bash  
+
+   $ git init
+   $ git remote add origin <git url>
+   $ git push -u origin master
+   ```
 
 
 ---
