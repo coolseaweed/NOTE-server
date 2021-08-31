@@ -13,25 +13,18 @@
   [9. References](#9.-References)
 
 ## 1. Docker 설치 <a name="1.-Docker-설치"></a>
-  ### Setup the repository
+  ### Install
+  - sudo user
+  - specify `DOCKER_VERSION` (like DOCKER_VERSION=18.09.9)
   ```bash
-  sudo apt-get update && \
-  sudo apt-get install - apt-transport-https ca-certificates curl gnupg-agent software-properties-common && \
-  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - &&\
-  sudo apt-key fingerprint 0EBFCD88 &&\
-  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-  ```
-  ### Install docker engine
-  ```bash
-  apt-cache madison docker-ce
-  -----------------------------------------------------------------------------------------------------------------
-  docker-ce | 5:18.09.1~3-0~ubuntu-xenial | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages
-  docker-ce | 5:18.09.0~3-0~ubuntu-xenial | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages
-  docker-ce | 18.06.1~ce~3-0~ubuntu       | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages
-  docker-ce | 18.06.0~ce~3-0~ubuntu       | https://download.docker.com/linux/ubuntu  xenial/stable amd64 Packages
-  -----------------------------------------------------------------------------------------------------------------
-  sudo apt-get install -y docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
-  sudo docker run hello-world
+  DOCKER_VERSION=18.09.9 
+  apt-get update && apt-get install -y - apt-transport-https ca-certificates curl gnupg-agent software-properties-common 
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - 
+  apt-key fingerprint 0EBFCD88 
+  add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" 
+  VERSION_STRING=$(apt-cache madison docker-ce | grep $DOCKER_VERSION | cut -d "|" -f2 | sed 's: ::') 
+  apt-get install -y docker-ce=$VERSION_STRING docker-ce-cli=$VERSION_STRING containerd.io 
+  docker run hello-world
   ```
   
   ### Add sudo group docker
